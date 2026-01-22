@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Drawing Warmups</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="dot"></div>
+      <div>
+        <div class="title">Drawing Warmups</div>
+        <div class="subtitle">Mixed + Balanced • One-click classroom prompts</div>
+      </div>
+    </div>
+
+    <div class="top-actions">
+      <button id="btnFullscreen" class="btn ghost" title="Fullscreen">⛶</button>
+      <button id="btnReset" class="btn ghost" title="Reset deck">↻</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="card prompt-card">
+      <div class="meta-row">
+        <div class="pill" id="pillTime">— min</div>
+        <div class="pill" id="pillDifficulty">Level —</div>
+        <div class="pill subtle" id="pillId">—</div>
+      </div>
+
+      <div id="promptTitle" class="prompt-title">Click “New Prompt” to begin</div>
+      <div id="promptText" class="prompt-text">
+        Your prompt will appear here in big, classroom-friendly text.
+      </div>
+
+      <div class="tag-row" id="tagRow"></div>
+
+      <div class="controls">
+        <div class="left-controls">
+          <button id="btnBack" class="btn ghost" disabled>← Back</button>
+          <button id="btnNew" class="btn primary">New Prompt</button>
+        </div>
+
+        <div class="right-controls">
+          <div class="font-controls">
+            <span class="label">Text</span>
+            <button class="btn ghost" id="btnFontDown" title="Smaller">A−</button>
+            <button class="btn ghost" id="btnFontUp" title="Larger">A+</button>
+          </div>
+
+          <div class="timer-controls">
+            <span class="label">Timer</span>
+            <button class="btn ghost timer" data-min="1">1</button>
+            <button class="btn ghost timer" data-min="2">2</button>
+            <button class="btn ghost timer" data-min="5">5</button>
+            <button class="btn ghost timer" data-min="10">10</button>
+            <button class="btn ghost" id="btnStopTimer" title="Stop timer">■</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="timer-bar">
+        <div class="timer-status" id="timerStatus">Timer: off</div>
+        <div class="progress">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="card filter-card">
+      <div class="filter-header">
+        <div class="filter-title">Filters</div>
+        <div class="filter-subtitle">Optional — helps match your lesson</div>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-label">Time</div>
+        <div class="chip-row" id="timeChips">
+          <button class="chip" data-time="1">1 min</button>
+          <button class="chip" data-time="2">2 min</button>
+          <button class="chip" data-time="5">5 min</button>
+          <button class="chip" data-time="10">10 min</button>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-label">Tags</div>
+        <div class="chip-row" id="tagChips"></div>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-label">Mode</div>
+        <div class="chip-row" id="modeChips">
+          <button class="chip" data-mode="individual">Individual</button>
+          <button class="chip" data-mode="pairs">Pairs</button>
+          <button class="chip" data-mode="whole-class">Whole class</button>
+        </div>
+      </div>
+
+      <div class="filter-footer">
+        <button id="btnClearFilters" class="btn ghost full">Clear filters</button>
+        <div class="small-note" id="countNote">Loading prompts…</div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    Tip: Press <b>F</b> for fullscreen • <b>N</b> for new prompt • <b>B</b> for back
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
