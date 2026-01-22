@@ -1,478 +1,185 @@
 [
   {
-    "id": "PC-001",
-    "title": "Shy and confident lines",
-    "prompt": "Draw a line that is very shy. Then draw one that is too confident.",
-    "time": 2,
-    "difficulty": 1,
-    "tags": [
-      "playful-lines",
-      "expression"
-    ],
-    "mode": "individual"
+    "id": "PW-001",
+    "title": "Shy to Bold Lines",
+    "prompt": "Fill the page with lines that start very shy and slowly become bold and confident. Begin with tiny, quiet lines and let them grow as you move across the page.",
+    "tip": "If you get stuck, repeat the same line again but slightly bigger or darker.",
+    "timeMin": 4,
+    "timeMax": 7,
+    "tags": ["playful-lines"]
   },
   {
-    "id": "PC-002",
-    "title": "Late line",
-    "prompt": "Draw a line that is late for school.",
-    "time": 2,
-    "difficulty": 1,
-    "tags": [
-      "playful-lines",
-      "story"
-    ],
-    "mode": "individual"
+    "id": "PW-002",
+    "title": "Lines That Avoid Each Other",
+    "prompt": "Draw many lines on the page that try very hard not to touch each other. Let them curve, bend, or change direction to avoid contact.",
+    "tip": "When two lines get close, slow down and decide where one of them should escape.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": ["playful-lines"]
   },
   {
-    "id": "PC-003",
-    "title": "Lines avoiding each other",
-    "prompt": "Draw two lines that are trying not to touch each other.",
-    "time": 2,
-    "difficulty": 1,
-    "tags": [
-      "playful-lines",
-      "spacing"
-    ],
-    "mode": "individual"
+    "id": "PW-003",
+    "title": "One Line, Many Moods",
+    "prompt": "Using one continuous line, draw a path that changes mood as it moves across the page: calm, excited, tired, angry, relaxed.",
+    "tip": "Think about how speed and pressure can show emotion.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": ["playful-lines"]
   },
   {
-    "id": "PC-004",
-    "title": "Sleepy line",
-    "prompt": "Draw a line that slowly falls asleep.",
-    "time": 2,
-    "difficulty": 1,
-    "tags": [
-      "playful-lines",
-      "rhythm"
-    ],
-    "mode": "individual"
+    "id": "PW-004",
+    "title": "Restless Line",
+    "prompt": "Draw a line that can never stay still. Let it wander, loop back, and change direction often.",
+    "tip": "Do not plan the path—decide only the next small move.",
+    "timeMin": 3,
+    "timeMax": 6,
+    "tags": ["playful-lines"]
   },
   {
-    "id": "PC-005",
-    "title": "Edge-scared line",
-    "prompt": "Draw a line that is scared of the edge of the paper.",
-    "time": 2,
-    "difficulty": 1,
-    "tags": [
-      "playful-lines",
-      "control"
-    ],
-    "mode": "individual"
+    "id": "PW-005",
+    "title": "Crowded Page",
+    "prompt": "Slowly fill the page with lines until it feels crowded, then carefully add a few more without covering everything.",
+    "tip": "Leave small breathing spaces between some lines.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": ["playful-lines"]
+  },
+
+  {
+    "id": "PW-006",
+    "title": "Blind Object Drawing",
+    "prompt": "Choose an object in front of you. Draw it without looking at your paper, keeping your eyes only on the object.",
+    "tip": "Move your hand slowly and do not erase.",
+    "timeMin": 5,
+    "timeMax": 7,
+    "tags": ["playful-observation"]
   },
   {
-    "id": "PC-006",
-    "title": "Indecisive line",
-    "prompt": "Draw a line that keeps changing its mind.",
-    "time": 2,
-    "difficulty": 1,
-    "tags": [
-      "playful-lines",
-      "expression"
-    ],
-    "mode": "individual"
+    "id": "PW-007",
+    "title": "One Continuous Shoe",
+    "prompt": "Draw your shoe using one continuous line without lifting your pen or pencil.",
+    "tip": "If you make a mistake, turn it into part of the drawing.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": ["playful-observation"]
   },
   {
-    "id": "PC-007",
-    "title": "Nervous calm line",
-    "prompt": "Draw a line that pretends to be calm but is actually nervous.",
-    "time": 2,
-    "difficulty": 1,
-    "tags": [
-      "playful-lines",
-      "emotion"
-    ],
-    "mode": "individual"
+    "id": "PW-008",
+    "title": "Big Object, Small Page",
+    "prompt": "Draw an object so large that it cannot fully fit on the page.",
+    "tip": "Let parts of the object go off the edge of the paper.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": ["playful-observation"]
   },
   {
-    "id": "PC-008",
-    "title": "Rule-breaking line",
-    "prompt": "Draw a line that breaks the rules halfway through.",
-    "time": 2,
-    "difficulty": 1,
-    "tags": [
-      "playful-lines",
-      "surprise"
-    ],
-    "mode": "individual"
+    "id": "PW-009",
+    "title": "Inside Spaces Only",
+    "prompt": "Draw an object by focusing only on the inside shapes and spaces. Do not draw the outer edge.",
+    "tip": "Look carefully for holes, gaps, and overlaps.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": ["playful-observation"]
   },
   {
-    "id": "PC-009",
-    "title": "Almost a shape",
-    "prompt": "Draw a line that wants to become a shape but never fully does.",
-    "time": 2,
-    "difficulty": 1,
-    "tags": [
-      "playful-lines",
-      "shape"
-    ],
-    "mode": "individual"
+    "id": "PW-010",
+    "title": "Fast Then Slow",
+    "prompt": "Draw the same object twice. First very quickly, then again very slowly on the same page.",
+    "tip": "Notice how the two drawings feel different.",
+    "timeMin": 5,
+    "timeMax": 7,
+    "tags": ["playful-observation"]
+  },
+
+  {
+    "id": "PW-011",
+    "title": "Almost Falling",
+    "prompt": "Draw a person who is about to lose balance but has not fallen yet.",
+    "tip": "Focus on the angle of the body, not details.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": ["playful-gesture"]
   },
   {
-    "id": "PC-010",
-    "title": "Bad copy",
-    "prompt": "Draw a line that is copying another line badly.",
-    "time": 2,
-    "difficulty": 1,
-    "tags": [
-      "playful-lines",
-      "play"
-    ],
-    "mode": "individual"
+    "id": "PW-012",
+    "title": "Running Late",
+    "prompt": "Draw a person running because they are late for something important.",
+    "tip": "Use long lines to show speed.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": ["playful-gesture"]
   },
   {
-    "id": "PC-011",
-    "title": "One-line shoe",
-    "prompt": "Draw your shoe using one continuous line. Do not lift your pen.",
-    "time": 3,
-    "difficulty": 1,
-    "tags": [
-      "playful-observation"
-    ],
-    "mode": "individual"
+    "id": "PW-013",
+    "title": "Heavy Object",
+    "prompt": "Draw a person carrying something very heavy.",
+    "tip": "Let the body bend or lean to show weight.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": ["playful-gesture"]
   },
   {
-    "id": "PC-012",
-    "title": "Blind hand",
-    "prompt": "Draw your hand without looking at your paper.",
-    "time": 3,
-    "difficulty": 1,
-    "tags": [
-      "playful-observation"
-    ],
-    "mode": "individual"
+    "id": "PW-014",
+    "title": "Stretching Body",
+    "prompt": "Draw a person stretching their body as far as possible.",
+    "tip": "Exaggerate the stretch.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": ["playful-gesture"]
   },
   {
-    "id": "PC-013",
-    "title": "Empty spaces",
-    "prompt": "Draw only the empty spaces inside and around a chair.",
-    "time": 3,
-    "difficulty": 1,
-    "tags": [
-      "playful-observation",
-      "seeing"
-    ],
-    "mode": "individual"
+    "id": "PW-015",
+    "title": "Sneaking Quietly",
+    "prompt": "Draw a person trying to move quietly without making noise.",
+    "tip": "Think about careful foot placement.",
+    "timeMin": 5,
+    "timeMax": 7,
+    "tags": ["playful-gesture"]
+  },
+
+  {
+    "id": "PW-016",
+    "title": "Object With a Secret",
+    "prompt": "Draw a normal object, then add one hidden feature that makes it special.",
+    "tip": "The secret does not have to be realistic.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": ["playful-imagination"]
   },
   {
-    "id": "PC-014",
-    "title": "Upside-down object",
-    "prompt": "Draw an object upside down.",
-    "time": 2,
-    "difficulty": 1,
-    "tags": [
-      "playful-observation"
-    ],
-    "mode": "individual"
+    "id": "PW-017",
+    "title": "Living Backpack",
+    "prompt": "Draw a backpack as if it were alive.",
+    "tip": "Give it posture or expression.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": ["playful-imagination"]
   },
   {
-    "id": "PC-015",
-    "title": "Slow pencil",
-    "prompt": "Draw your pencil, starting at the eraser end, very slowly.",
-    "time": 3,
-    "difficulty": 1,
-    "tags": [
-      "playful-observation",
-      "focus"
-    ],
-    "mode": "individual"
+    "id": "PW-018",
+    "title": "Impossible Tool",
+    "prompt": "Design a tool that does something impossible.",
+    "tip": "Start with a real tool, then change one part.",
+    "timeMin": 6,
+    "timeMax": 10,
+    "tags": ["playful-imagination"]
   },
   {
-    "id": "PC-016",
-    "title": "Too big",
-    "prompt": "Draw an object so big it does not fit on the page.",
-    "time": 2,
-    "difficulty": 1,
-    "tags": [
-      "playful-observation",
-      "scale"
-    ],
-    "mode": "individual"
+    "id": "PW-019",
+    "title": "Classroom Creature",
+    "prompt": "Draw a creature that secretly lives in your classroom.",
+    "tip": "Think about where it hides.",
+    "timeMin": 6,
+    "timeMax": 10,
+    "tags": ["playful-imagination"]
   },
   {
-    "id": "PC-017",
-    "title": "Dots only",
-    "prompt": "Draw something in front of you using only dots.",
-    "time": 3,
-    "difficulty": 1,
-    "tags": [
-      "playful-observation",
-      "marks"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-018",
-    "title": "Memory check",
-    "prompt": "Draw an object from memory, then look at it and add what you missed.",
-    "time": 4,
-    "difficulty": 1,
-    "tags": [
-      "playful-observation",
-      "memory"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-019",
-    "title": "Fast then slow",
-    "prompt": "Draw the same object twice: once very fast, once very slow.",
-    "time": 3,
-    "difficulty": 1,
-    "tags": [
-      "playful-observation",
-      "tempo"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-020",
-    "title": "Inside only",
-    "prompt": "Draw an object without drawing its outline. Show only the inside details.",
-    "time": 3,
-    "difficulty": 1,
-    "tags": [
-      "playful-observation",
-      "detail"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-021",
-    "title": "Banana slip",
-    "prompt": "Draw someone slipping on a banana peel.",
-    "time": 2,
-    "difficulty": 1,
-    "tags": [
-      "playful-gesture",
-      "movement"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-022",
-    "title": "Late run",
-    "prompt": "Draw a person running because they are late.",
-    "time": 2,
-    "difficulty": 1,
-    "tags": [
-      "playful-gesture",
-      "story"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-023",
-    "title": "Heavy load",
-    "prompt": "Draw someone carrying something very heavy.",
-    "time": 2,
-    "difficulty": 1,
-    "tags": [
-      "playful-gesture",
-      "weight"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-024",
-    "title": "Jumping puddle",
-    "prompt": "Draw a person jumping over a puddle. Do not draw the face.",
-    "time": 2,
-    "difficulty": 1,
-    "tags": [
-      "playful-gesture",
-      "action"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-025",
-    "title": "Quiet chaos",
-    "prompt": "Draw someone trying to stay quiet in a noisy place.",
-    "time": 3,
-    "difficulty": 1,
-    "tags": [
-      "playful-gesture",
-      "emotion"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-026",
-    "title": "Morning stretch",
-    "prompt": "Draw a person stretching after waking up.",
-    "time": 2,
-    "difficulty": 1,
-    "tags": [
-      "playful-gesture",
-      "movement"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-027",
-    "title": "Suspicious door",
-    "prompt": "Draw someone opening a door they do not trust.",
-    "time": 3,
-    "difficulty": 1,
-    "tags": [
-      "playful-gesture",
-      "story"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-028",
-    "title": "Secret dance",
-    "prompt": "Draw a person dancing when they think nobody is watching.",
-    "time": 3,
-    "difficulty": 1,
-    "tags": [
-      "playful-gesture",
-      "expression"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-029",
-    "title": "Standing nap",
-    "prompt": "Draw a person falling asleep while standing.",
-    "time": 2,
-    "difficulty": 1,
-    "tags": [
-      "playful-gesture",
-      "balance"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-030",
-    "title": "Chase",
-    "prompt": "Draw a person chasing something that keeps escaping.",
-    "time": 2,
-    "difficulty": 1,
-    "tags": [
-      "playful-gesture",
-      "movement"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-031",
-    "title": "Impossible feature",
-    "prompt": "Draw a normal object with one impossible feature.",
-    "time": 3,
-    "difficulty": 1,
-    "tags": [
-      "playful-imagination"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-032",
-    "title": "Classroom animal",
-    "prompt": "Draw an animal that secretly lives in your classroom.",
-    "time": 3,
-    "difficulty": 1,
-    "tags": [
-      "playful-imagination",
-      "story"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-033",
-    "title": "Rebel chair",
-    "prompt": "Draw a chair that does not want to be sat on.",
-    "time": 3,
-    "difficulty": 1,
-    "tags": [
-      "playful-imagination",
-      "object"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-034",
-    "title": "Living backpack",
-    "prompt": "Draw a backpack that is alive.",
-    "time": 3,
-    "difficulty": 1,
-    "tags": [
-      "playful-imagination",
-      "character"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-035",
-    "title": "Strange behavior",
-    "prompt": "Draw an object that looks normal but behaves strangely.",
-    "time": 3,
-    "difficulty": 1,
-    "tags": [
-      "playful-imagination",
-      "surprise"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-036",
-    "title": "Opposite tool",
-    "prompt": "Draw a tool that does the opposite of its job.",
-    "time": 3,
-    "difficulty": 1,
-    "tags": [
-      "playful-imagination",
-      "twist"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-037",
-    "title": "Mashup",
-    "prompt": "Draw an animal mixed with a classroom object.",
-    "time": 3,
-    "difficulty": 1,
-    "tags": [
-      "playful-imagination",
-      "mashup"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-038",
-    "title": "Small problem machine",
-    "prompt": "Draw a machine that solves a very small problem.",
-    "time": 3,
-    "difficulty": 1,
-    "tags": [
-      "playful-imagination",
-      "invention"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-039",
-    "title": "Alien version",
-    "prompt": "Draw a familiar object as if it were from another planet.",
-    "time": 3,
-    "difficulty": 1,
-    "tags": [
-      "playful-imagination",
-      "worldbuilding"
-    ],
-    "mode": "individual"
-  },
-  {
-    "id": "PC-040",
-    "title": "One surprise",
-    "prompt": "Draw something ordinary. Add one thing that makes it surprising.",
-    "time": 3,
-    "difficulty": 1,
-    "tags": [
-      "playful-imagination",
-      "surprise"
-    ],
-    "mode": "individual"
+    "id": "PW-020",
+    "title": "Object Mash-Up",
+    "prompt": "Combine two ordinary objects into one new invention.",
+    "tip": "Let both objects be clearly visible.",
+    "timeMin": 6,
+    "timeMax": 10,
+    "tags": ["playful-imagination"]
   }
 ]
