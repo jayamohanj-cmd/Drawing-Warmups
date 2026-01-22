@@ -18,60 +18,77 @@ export function startShaderBackground(canvas) {
 
   // Smooth, moving “blob gradients” + subtle noise (cheap)
   const fragSrc = `
-    precision mediump float;
-    varying vec2 v_uv;
-    uniform vec2 u_res;
-    uniform float u_time;
+precision mediump float;
 
-    float hash(vec2 p){
-      p = fract(p * vec2(123.34, 345.45));
-      p += dot(p, p + 34.345);
-      return fract(p.x * p.y);
-    }
+varying vec2 v_uv;
+uniform vec2 u_res;
+uniform float u_time;
 
-    float noise(vec2 p){
-      vec2 i = floor(p), f = fract(p);
-      float a = hash(i);
-      float b = hash(i + vec2(1.0, 0.0));
-      float c = hash(i + vec2(0.0, 1.0));
-      float d = hash(i + vec2(1.0, 1.0));
-      vec2 u = f*f*(3.0-2.0*f);
-      return mix(a, b, u.x) + (c - a)*u.y*(1.0 - u.x) + (d - b)*u.x*u.y;
-    }
+/* cheap hash + noise (fast) */
+float hash(vec2 p){
+  p = fract(p * vec2(123.34, 345.45));
+  p += dot(p, p + 34.345);
+  return fract(p.x * p.y);
+}
 
-    vec3 palette(float t){
-      // warm-pink-orange with a hint of lilac
-      vec3 a = vec3(0.90, 0.35, 0.35);
-      vec3 b = vec3(0.35, 0.25, 0.55);
-      vec3 c = vec3(1.10, 0.75, 0.45);
-      return a + b*cos(6.28318*(c*t + vec3(0.0, 0.1, 0.2)));
-    }
+float noise(vec2 p){
+  vec2 i = floor(p);
+  vec2 f = fract(p);
+  float a = hash(i);
+  float b = hash(i + vec2(1.0, 0.0));
+  float c = hash(i + vec2(0.0, 1.0));
+  float d = hash(i + vec2(1.0, 1.0));
+  vec2 u = f*f*(3.0-2.0*f);
+  return mix(a, b, u.x) +
+         (c - a) * u.y * (1.0 - u.x) +
+         (d - b) * u.x * u.y;
+}
 
-    void main(){
-      vec2 uv = v_uv;
-      // keep aspect consistent
-      vec2 p = (uv - 0.5);
-      p.x *= u_res.x / u_res.y;
+/* warm orange / pink palette */
+vec3 palette(float t){
+  vec3 orange = vec3(1.00, 0.55, 0.20);
+  vec3 coral  = vec3(1.00, 0.35, 0.45);
+  vec3 pink   = vec3(0.95, 0.55, 0.75);
 
-      float t = u_time * 0.12;
+  return mix(
+    mix(orange, coral, smoothstep(0.2, 0.6, t)),
+    pink,
+    smoothstep(0.6, 1.0, t)
+  );
+}
 
-      // three moving fields
-      float f1 = 0.0;
-      f1 += 0.65 / (length(p - vec2( 0.25*cos(t*1.3), 0.25*sin(t*1.1))) + 0.25);
-      f1 += 0.55 / (length(p - vec2( 0.35*cos(t*0.9+2.0), 0.30*sin(t*1.2+1.0))) + 0.28);
-      f1 += 0.45 / (length(p - vec2( 0.30*cos(t*1.1-1.2), 0.35*sin(t*0.8-2.2))) + 0.30);
+void main(){
+  vec2 uv = v_uv;
+  vec2 p = uv - 0.5;
+  p.x *= u_res.x / u_res.y;
 
-      float n = noise(uv * 2.5 + t * 0.7);
-      float v = smoothstep(0.2, 1.6, f1) + 0.10*n;
+  float t = u_time * 0.10; // calm motion
 
-      vec3 col = palette(v);
-      // gentle vignette
-      float vig = smoothstep(1.1, 0.3, length(p));
-      col *= mix(0.85, 1.10, vig);
+  /* three soft moving halos */
+  float f = 0.0;
+  f += 0.70 / (length(p - vec2( 0.30*cos(t*1.1), 0.25*sin(t*0.9))) + 0.35);
+  f += 0.55 / (length(p - vec2( 0.25*cos(t*0.7+2.0), 0.30*sin(t*1.0+1.3))) + 0.40);
+  f += 0.45 / (length(p - vec2( 0.35*cos(t*0.9-1.7), 0.20*sin(t*0.8-2.1))) + 0.45);
 
-      gl_FragColor = vec4(col, 1.0);
-    }
-  `;
+  /* subtle grain */
+  float g = noise(uv * u_res.xy * 0.15 + t * 12.0);
+  f += (g - 0.5) * 0.08;
+
+  /* color */
+  vec3 col = palette(clamp(f, 0.0, 1.0));
+
+  /* warm glow center */
+  float glow = smoothstep(0.9, 0.2, length(p));
+  col += vec3(1.0, 0.6, 0.3) * glow * 0.15;
+
+  /* vignette */
+  float vig = smoothstep(1.1, 0.4, length(p));
+  col *= mix(0.85, 1.1, vig);
+
+  gl_FragColor = vec4(col, 1.0);
+}
+`;
+
 
   function compile(type, src){
     const s = gl.createShader(type);
