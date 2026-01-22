@@ -4,10 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Drawing Warmups</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
+  <!-- Optional shader background -->
   <canvas id="bgShader" aria-hidden="true"></canvas>
+
   <header class="topbar">
     <div class="brand">
       <div class="dot"></div>
@@ -15,10 +18,6 @@
         <div class="title">Drawing Warmups</div>
         <div class="subtitle">Mixed + Balanced • One-click classroom prompts</div>
       </div>
-    </div>
-    <div class="prompt-panel">
-      <div id="promptTitle" class="prompt-title">...</div>
-      <div id="promptText" class="prompt-text">...</div>
     </div>
 
     <div class="top-actions">
@@ -35,9 +34,12 @@
         <div class="pill subtle" id="pillId">—</div>
       </div>
 
-      <div id="promptTitle" class="prompt-title">Click “New Prompt” to begin</div>
-      <div id="promptText" class="prompt-text">
-        Your prompt will appear here in big, classroom-friendly text.
+      <!-- Prompt panel makes text pop on projectors -->
+      <div class="prompt-panel">
+        <div id="promptTitle" class="prompt-title">Click “New Prompt” to begin</div>
+        <div id="promptText" class="prompt-text">
+          Your prompt will appear here in big, classroom-friendly text.
+        </div>
       </div>
 
       <div class="tag-row" id="tagRow"></div>
@@ -115,6 +117,6 @@
     Tip: Press <b>F</b> for fullscreen • <b>N</b> for new prompt • <b>B</b> for back
   </footer>
 
-  <script type="module" src="app.js"></script>
+  <script type="module" src="./app.js"></script>
 </body>
 </html>
