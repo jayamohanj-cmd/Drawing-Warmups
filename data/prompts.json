@@ -1,185 +1,1102 @@
 [
   {
-    "id": "PW-001",
-    "title": "Shy to Bold Lines",
-    "prompt": "Fill the page with lines that start very shy and slowly become bold and confident. Begin with tiny, quiet lines and let them grow as you move across the page.",
-    "tip": "If you get stuck, repeat the same line again but slightly bigger or darker.",
+    "id": "PN-001",
+    "title": "Escaping Line",
+    "prompt": "Draw a line that is trying to escape from the page.",
+    "tip": "Decide what it is escaping from.",
     "timeMin": 4,
     "timeMax": 7,
-    "tags": ["playful-lines"]
+    "tags": [
+      "playful-lines"
+    ]
   },
   {
-    "id": "PW-002",
-    "title": "Lines That Avoid Each Other",
-    "prompt": "Draw many lines on the page that try very hard not to touch each other. Let them curve, bend, or change direction to avoid contact.",
-    "tip": "When two lines get close, slow down and decide where one of them should escape.",
-    "timeMin": 5,
-    "timeMax": 8,
-    "tags": ["playful-lines"]
-  },
-  {
-    "id": "PW-003",
-    "title": "One Line, Many Moods",
-    "prompt": "Using one continuous line, draw a path that changes mood as it moves across the page: calm, excited, tired, angry, relaxed.",
-    "tip": "Think about how speed and pressure can show emotion.",
+    "id": "PN-002",
+    "title": "Lost Line",
+    "prompt": "Draw a line that gets lost and slowly finds its way.",
+    "tip": "Let it wander before settling.",
     "timeMin": 4,
-    "timeMax": 6,
-    "tags": ["playful-lines"]
-  },
-  {
-    "id": "PW-004",
-    "title": "Restless Line",
-    "prompt": "Draw a line that can never stay still. Let it wander, loop back, and change direction often.",
-    "tip": "Do not plan the path—decide only the next small move.",
-    "timeMin": 3,
-    "timeMax": 6,
-    "tags": ["playful-lines"]
-  },
-  {
-    "id": "PW-005",
-    "title": "Crowded Page",
-    "prompt": "Slowly fill the page with lines until it feels crowded, then carefully add a few more without covering everything.",
-    "tip": "Leave small breathing spaces between some lines.",
-    "timeMin": 5,
-    "timeMax": 8,
-    "tags": ["playful-lines"]
-  },
-
-  {
-    "id": "PW-006",
-    "title": "Blind Object Drawing",
-    "prompt": "Choose an object in front of you. Draw it without looking at your paper, keeping your eyes only on the object.",
-    "tip": "Move your hand slowly and do not erase.",
-    "timeMin": 5,
     "timeMax": 7,
-    "tags": ["playful-observation"]
+    "tags": [
+      "playful-lines"
+    ]
   },
   {
-    "id": "PW-007",
-    "title": "One Continuous Shoe",
-    "prompt": "Draw your shoe using one continuous line without lifting your pen or pencil.",
-    "tip": "If you make a mistake, turn it into part of the drawing.",
+    "id": "PN-003",
+    "title": "Following Line",
+    "prompt": "Draw one line that follows another closely.",
+    "tip": "Let the leader change direction suddenly.",
     "timeMin": 4,
     "timeMax": 6,
-    "tags": ["playful-observation"]
+    "tags": [
+      "playful-lines"
+    ]
   },
   {
-    "id": "PW-008",
-    "title": "Big Object, Small Page",
-    "prompt": "Draw an object so large that it cannot fully fit on the page.",
-    "tip": "Let parts of the object go off the edge of the paper.",
+    "id": "PN-004",
+    "title": "Interrupted Story",
+    "prompt": "Draw a line story that keeps getting interrupted.",
+    "tip": "Pause before continuing each time.",
     "timeMin": 4,
     "timeMax": 6,
-    "tags": ["playful-observation"]
+    "tags": [
+      "playful-lines"
+    ]
   },
   {
-    "id": "PW-009",
-    "title": "Inside Spaces Only",
-    "prompt": "Draw an object by focusing only on the inside shapes and spaces. Do not draw the outer edge.",
-    "tip": "Look carefully for holes, gaps, and overlaps.",
+    "id": "PN-005",
+    "title": "Weather Lines",
+    "prompt": "Draw lines reacting to imaginary wind or rain.",
+    "tip": "Change direction with the weather.",
     "timeMin": 5,
     "timeMax": 8,
-    "tags": ["playful-observation"]
+    "tags": [
+      "playful-lines"
+    ]
   },
   {
-    "id": "PW-010",
-    "title": "Fast Then Slow",
-    "prompt": "Draw the same object twice. First very quickly, then again very slowly on the same page.",
-    "tip": "Notice how the two drawings feel different.",
+    "id": "PN-006",
+    "title": "Travel Path",
+    "prompt": "Draw the journey of a line across the page.",
+    "tip": "Think beginning, middle, end.",
     "timeMin": 5,
-    "timeMax": 7,
-    "tags": ["playful-observation"]
+    "timeMax": 8,
+    "tags": [
+      "playful-lines"
+    ]
   },
-
   {
-    "id": "PW-011",
+    "id": "PN-007",
+    "title": "Protective Lines",
+    "prompt": "Draw lines forming a protective space.",
+    "tip": "Decide what is being protected.",
+    "timeMin": 4,
+    "timeMax": 7,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-008",
+    "title": "Chasing Lines",
+    "prompt": "Draw one line chasing another.",
+    "tip": "Speed changes show emotion.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-009",
+    "title": "Growing Maze",
+    "prompt": "Create a maze that grows as you draw.",
+    "tip": "Do not plan ahead.",
+    "timeMin": 6,
+    "timeMax": 9,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-010",
+    "title": "Broken Journey",
+    "prompt": "Draw a path that breaks and reconnects.",
+    "tip": "Each break changes direction.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-011",
+    "title": "Object With a Past",
+    "prompt": "Draw an object as if it has been used for many years.",
+    "tip": "Add small marks of use.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-012",
+    "title": "Just After Use",
+    "prompt": "Draw an object just after someone used it.",
+    "tip": "Imagine the person left moments ago.",
+    "timeMin": 4,
+    "timeMax": 7,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-013",
+    "title": "Hidden Side",
+    "prompt": "Draw only the side of an object that is usually hidden.",
+    "tip": "Turn it around slowly.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-014",
+    "title": "Partial Memory",
+    "prompt": "Draw an object from memory, then add missing parts after looking.",
+    "tip": "Notice what you forgot.",
+    "timeMin": 6,
+    "timeMax": 9,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-015",
+    "title": "Close Encounter",
+    "prompt": "Draw a very close-up view of an object.",
+    "tip": "Crop boldly.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-016",
+    "title": "Far View",
+    "prompt": "Draw the same object very small on the page.",
+    "tip": "Leave lots of empty space.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-017",
+    "title": "Before Touch",
+    "prompt": "Draw an object before anyone touches it.",
+    "tip": "Keep it neat and calm.",
+    "timeMin": 4,
+    "timeMax": 7,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-018",
+    "title": "After Touch",
+    "prompt": "Draw the same object after it has been handled.",
+    "tip": "Let it feel disturbed.",
+    "timeMin": 4,
+    "timeMax": 7,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-019",
+    "title": "Empty Evidence",
+    "prompt": "Draw only the empty space left by an object.",
+    "tip": "The object is missing.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-020",
+    "title": "Object Story",
+    "prompt": "Draw an object and add one clue about its owner.",
+    "tip": "Small details matter.",
+    "timeMin": 6,
+    "timeMax": 9,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-021",
     "title": "Almost Falling",
-    "prompt": "Draw a person who is about to lose balance but has not fallen yet.",
-    "tip": "Focus on the angle of the body, not details.",
+    "prompt": "Draw a person about to fall but not yet.",
+    "tip": "Freeze the moment.",
     "timeMin": 4,
     "timeMax": 6,
-    "tags": ["playful-gesture"]
+    "tags": [
+      "playful-gesture"
+    ]
   },
   {
-    "id": "PW-012",
-    "title": "Running Late",
-    "prompt": "Draw a person running because they are late for something important.",
-    "tip": "Use long lines to show speed.",
-    "timeMin": 4,
-    "timeMax": 6,
-    "tags": ["playful-gesture"]
-  },
-  {
-    "id": "PW-013",
-    "title": "Heavy Object",
-    "prompt": "Draw a person carrying something very heavy.",
-    "tip": "Let the body bend or lean to show weight.",
+    "id": "PN-022",
+    "title": "Trying to Balance",
+    "prompt": "Draw someone trying to balance something unstable.",
+    "tip": "Show tension.",
     "timeMin": 5,
     "timeMax": 8,
-    "tags": ["playful-gesture"]
+    "tags": [
+      "playful-gesture"
+    ]
   },
   {
-    "id": "PW-014",
-    "title": "Stretching Body",
-    "prompt": "Draw a person stretching their body as far as possible.",
-    "tip": "Exaggerate the stretch.",
-    "timeMin": 4,
-    "timeMax": 6,
-    "tags": ["playful-gesture"]
-  },
-  {
-    "id": "PW-015",
-    "title": "Sneaking Quietly",
-    "prompt": "Draw a person trying to move quietly without making noise.",
-    "tip": "Think about careful foot placement.",
+    "id": "PN-023",
+    "title": "Carrying Carefully",
+    "prompt": "Draw someone carrying something fragile.",
+    "tip": "Hands matter.",
     "timeMin": 5,
     "timeMax": 7,
-    "tags": ["playful-gesture"]
-  },
-
-  {
-    "id": "PW-016",
-    "title": "Object With a Secret",
-    "prompt": "Draw a normal object, then add one hidden feature that makes it special.",
-    "tip": "The secret does not have to be realistic.",
-    "timeMin": 5,
-    "timeMax": 8,
-    "tags": ["playful-imagination"]
+    "tags": [
+      "playful-gesture"
+    ]
   },
   {
-    "id": "PW-017",
-    "title": "Living Backpack",
-    "prompt": "Draw a backpack as if it were alive.",
-    "tip": "Give it posture or expression.",
+    "id": "PN-024",
+    "title": "Sudden Stop",
+    "prompt": "Draw a person stopping suddenly.",
+    "tip": "Body leans.",
     "timeMin": 4,
     "timeMax": 6,
-    "tags": ["playful-imagination"]
+    "tags": [
+      "playful-gesture"
+    ]
   },
   {
-    "id": "PW-018",
-    "title": "Impossible Tool",
-    "prompt": "Design a tool that does something impossible.",
-    "tip": "Start with a real tool, then change one part.",
-    "timeMin": 6,
-    "timeMax": 10,
-    "tags": ["playful-imagination"]
+    "id": "PN-025",
+    "title": "Quiet Movement",
+    "prompt": "Draw someone moving without being noticed.",
+    "tip": "Small steps.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-gesture"
+    ]
   },
   {
-    "id": "PW-019",
-    "title": "Classroom Creature",
-    "prompt": "Draw a creature that secretly lives in your classroom.",
-    "tip": "Think about where it hides.",
-    "timeMin": 6,
-    "timeMax": 10,
-    "tags": ["playful-imagination"]
+    "id": "PN-026",
+    "title": "Heavy Door",
+    "prompt": "Draw someone pushing open a heavy door.",
+    "tip": "Use angles.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-gesture"
+    ]
   },
   {
-    "id": "PW-020",
-    "title": "Object Mash-Up",
-    "prompt": "Combine two ordinary objects into one new invention.",
-    "tip": "Let both objects be clearly visible.",
+    "id": "PN-027",
+    "title": "Pulling Back",
+    "prompt": "Draw someone pulling something toward themselves.",
+    "tip": "Use strong lines.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-gesture"
+    ]
+  },
+  {
+    "id": "PN-028",
+    "title": "Reaching Too Far",
+    "prompt": "Draw a person reaching just beyond their limit.",
+    "tip": "Stretch shapes.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-gesture"
+    ]
+  },
+  {
+    "id": "PN-029",
+    "title": "Dodging",
+    "prompt": "Draw a person dodging something fast.",
+    "tip": "Exaggerate motion.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-gesture"
+    ]
+  },
+  {
+    "id": "PN-030",
+    "title": "Recovering",
+    "prompt": "Draw a person recovering after a fall or slip.",
+    "tip": "Show imbalance.",
+    "timeMin": 5,
+    "timeMax": 7,
+    "tags": [
+      "playful-gesture"
+    ]
+  },
+  {
+    "id": "PN-031",
+    "title": "Living Object",
+    "prompt": "Draw an everyday object that is alive.",
+    "tip": "Give it intention.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PN-032",
+    "title": "Secret Room",
+    "prompt": "Draw a hidden room inside a normal place.",
+    "tip": "Where is the entrance?",
     "timeMin": 6,
     "timeMax": 10,
-    "tags": ["playful-imagination"]
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PN-033",
+    "title": "Helpful Creature",
+    "prompt": "Draw a creature that helps with a small problem.",
+    "tip": "What problem?",
+    "timeMin": 6,
+    "timeMax": 9,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PN-034",
+    "title": "Strange Tool",
+    "prompt": "Design a tool for a problem that does not exist.",
+    "tip": "Invent the problem.",
+    "timeMin": 6,
+    "timeMax": 10,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PN-035",
+    "title": "Classroom Myth",
+    "prompt": "Draw a myth or legend that takes place in your classroom.",
+    "tip": "Use familiar objects.",
+    "timeMin": 7,
+    "timeMax": 10,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PN-036",
+    "title": "Moving Furniture",
+    "prompt": "Draw furniture that moves on its own.",
+    "tip": "How does it move?",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PN-037",
+    "title": "Future Object",
+    "prompt": "Draw an object from the future used for daily life.",
+    "tip": "Keep it simple.",
+    "timeMin": 6,
+    "timeMax": 9,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PN-038",
+    "title": "Invisible Thing",
+    "prompt": "Draw something invisible by showing its effect.",
+    "tip": "Focus on clues.",
+    "timeMin": 6,
+    "timeMax": 10,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PN-039",
+    "title": "Pocket World",
+    "prompt": "Draw a tiny world that fits in a pocket.",
+    "tip": "Scale contrast.",
+    "timeMin": 6,
+    "timeMax": 9,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PN-040",
+    "title": "Night Version",
+    "prompt": "Draw a daytime object as it appears at night.",
+    "tip": "Mood matters.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PN-041",
+    "title": "Escaping Line",
+    "prompt": "Draw a line that is trying to escape from the page.",
+    "tip": "Decide what it is escaping from.",
+    "timeMin": 4,
+    "timeMax": 7,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-042",
+    "title": "Lost Line",
+    "prompt": "Draw a line that gets lost and slowly finds its way.",
+    "tip": "Let it wander before settling.",
+    "timeMin": 4,
+    "timeMax": 7,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-043",
+    "title": "Following Line",
+    "prompt": "Draw one line that follows another closely.",
+    "tip": "Let the leader change direction suddenly.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-044",
+    "title": "Interrupted Story",
+    "prompt": "Draw a line story that keeps getting interrupted.",
+    "tip": "Pause before continuing each time.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-045",
+    "title": "Weather Lines",
+    "prompt": "Draw lines reacting to imaginary wind or rain.",
+    "tip": "Change direction with the weather.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-046",
+    "title": "Travel Path",
+    "prompt": "Draw the journey of a line across the page.",
+    "tip": "Think beginning, middle, end.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-047",
+    "title": "Protective Lines",
+    "prompt": "Draw lines forming a protective space.",
+    "tip": "Decide what is being protected.",
+    "timeMin": 4,
+    "timeMax": 7,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-048",
+    "title": "Chasing Lines",
+    "prompt": "Draw one line chasing another.",
+    "tip": "Speed changes show emotion.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-049",
+    "title": "Growing Maze",
+    "prompt": "Create a maze that grows as you draw.",
+    "tip": "Do not plan ahead.",
+    "timeMin": 6,
+    "timeMax": 9,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-050",
+    "title": "Broken Journey",
+    "prompt": "Draw a path that breaks and reconnects.",
+    "tip": "Each break changes direction.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-051",
+    "title": "Object With a Past",
+    "prompt": "Draw an object as if it has been used for many years.",
+    "tip": "Add small marks of use.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-052",
+    "title": "Just After Use",
+    "prompt": "Draw an object just after someone used it.",
+    "tip": "Imagine the person left moments ago.",
+    "timeMin": 4,
+    "timeMax": 7,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-053",
+    "title": "Hidden Side",
+    "prompt": "Draw only the side of an object that is usually hidden.",
+    "tip": "Turn it around slowly.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-054",
+    "title": "Partial Memory",
+    "prompt": "Draw an object from memory, then add missing parts after looking.",
+    "tip": "Notice what you forgot.",
+    "timeMin": 6,
+    "timeMax": 9,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-055",
+    "title": "Close Encounter",
+    "prompt": "Draw a very close-up view of an object.",
+    "tip": "Crop boldly.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-056",
+    "title": "Far View",
+    "prompt": "Draw the same object very small on the page.",
+    "tip": "Leave lots of empty space.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-057",
+    "title": "Before Touch",
+    "prompt": "Draw an object before anyone touches it.",
+    "tip": "Keep it neat and calm.",
+    "timeMin": 4,
+    "timeMax": 7,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-058",
+    "title": "After Touch",
+    "prompt": "Draw the same object after it has been handled.",
+    "tip": "Let it feel disturbed.",
+    "timeMin": 4,
+    "timeMax": 7,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-059",
+    "title": "Empty Evidence",
+    "prompt": "Draw only the empty space left by an object.",
+    "tip": "The object is missing.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-060",
+    "title": "Object Story",
+    "prompt": "Draw an object and add one clue about its owner.",
+    "tip": "Small details matter.",
+    "timeMin": 6,
+    "timeMax": 9,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-061",
+    "title": "Almost Falling",
+    "prompt": "Draw a person about to fall but not yet.",
+    "tip": "Freeze the moment.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-gesture"
+    ]
+  },
+  {
+    "id": "PN-062",
+    "title": "Trying to Balance",
+    "prompt": "Draw someone trying to balance something unstable.",
+    "tip": "Show tension.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-gesture"
+    ]
+  },
+  {
+    "id": "PN-063",
+    "title": "Carrying Carefully",
+    "prompt": "Draw someone carrying something fragile.",
+    "tip": "Hands matter.",
+    "timeMin": 5,
+    "timeMax": 7,
+    "tags": [
+      "playful-gesture"
+    ]
+  },
+  {
+    "id": "PN-064",
+    "title": "Sudden Stop",
+    "prompt": "Draw a person stopping suddenly.",
+    "tip": "Body leans.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-gesture"
+    ]
+  },
+  {
+    "id": "PN-065",
+    "title": "Quiet Movement",
+    "prompt": "Draw someone moving without being noticed.",
+    "tip": "Small steps.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-gesture"
+    ]
+  },
+  {
+    "id": "PN-066",
+    "title": "Heavy Door",
+    "prompt": "Draw someone pushing open a heavy door.",
+    "tip": "Use angles.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-gesture"
+    ]
+  },
+  {
+    "id": "PN-067",
+    "title": "Pulling Back",
+    "prompt": "Draw someone pulling something toward themselves.",
+    "tip": "Use strong lines.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-gesture"
+    ]
+  },
+  {
+    "id": "PN-068",
+    "title": "Reaching Too Far",
+    "prompt": "Draw a person reaching just beyond their limit.",
+    "tip": "Stretch shapes.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-gesture"
+    ]
+  },
+  {
+    "id": "PN-069",
+    "title": "Dodging",
+    "prompt": "Draw a person dodging something fast.",
+    "tip": "Exaggerate motion.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-gesture"
+    ]
+  },
+  {
+    "id": "PN-070",
+    "title": "Recovering",
+    "prompt": "Draw a person recovering after a fall or slip.",
+    "tip": "Show imbalance.",
+    "timeMin": 5,
+    "timeMax": 7,
+    "tags": [
+      "playful-gesture"
+    ]
+  },
+  {
+    "id": "PN-071",
+    "title": "Living Object",
+    "prompt": "Draw an everyday object that is alive.",
+    "tip": "Give it intention.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PN-072",
+    "title": "Secret Room",
+    "prompt": "Draw a hidden room inside a normal place.",
+    "tip": "Where is the entrance?",
+    "timeMin": 6,
+    "timeMax": 10,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PN-073",
+    "title": "Helpful Creature",
+    "prompt": "Draw a creature that helps with a small problem.",
+    "tip": "What problem?",
+    "timeMin": 6,
+    "timeMax": 9,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PN-074",
+    "title": "Strange Tool",
+    "prompt": "Design a tool for a problem that does not exist.",
+    "tip": "Invent the problem.",
+    "timeMin": 6,
+    "timeMax": 10,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PN-075",
+    "title": "Classroom Myth",
+    "prompt": "Draw a myth or legend that takes place in your classroom.",
+    "tip": "Use familiar objects.",
+    "timeMin": 7,
+    "timeMax": 10,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PN-076",
+    "title": "Moving Furniture",
+    "prompt": "Draw furniture that moves on its own.",
+    "tip": "How does it move?",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PN-077",
+    "title": "Future Object",
+    "prompt": "Draw an object from the future used for daily life.",
+    "tip": "Keep it simple.",
+    "timeMin": 6,
+    "timeMax": 9,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PN-078",
+    "title": "Invisible Thing",
+    "prompt": "Draw something invisible by showing its effect.",
+    "tip": "Focus on clues.",
+    "timeMin": 6,
+    "timeMax": 10,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PN-079",
+    "title": "Pocket World",
+    "prompt": "Draw a tiny world that fits in a pocket.",
+    "tip": "Scale contrast.",
+    "timeMin": 6,
+    "timeMax": 9,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PN-080",
+    "title": "Night Version",
+    "prompt": "Draw a daytime object as it appears at night.",
+    "tip": "Mood matters.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PN-081",
+    "title": "Escaping Line",
+    "prompt": "Draw a line that is trying to escape from the page.",
+    "tip": "Decide what it is escaping from.",
+    "timeMin": 4,
+    "timeMax": 7,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-082",
+    "title": "Lost Line",
+    "prompt": "Draw a line that gets lost and slowly finds its way.",
+    "tip": "Let it wander before settling.",
+    "timeMin": 4,
+    "timeMax": 7,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-083",
+    "title": "Following Line",
+    "prompt": "Draw one line that follows another closely.",
+    "tip": "Let the leader change direction suddenly.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-084",
+    "title": "Interrupted Story",
+    "prompt": "Draw a line story that keeps getting interrupted.",
+    "tip": "Pause before continuing each time.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-085",
+    "title": "Weather Lines",
+    "prompt": "Draw lines reacting to imaginary wind or rain.",
+    "tip": "Change direction with the weather.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-086",
+    "title": "Travel Path",
+    "prompt": "Draw the journey of a line across the page.",
+    "tip": "Think beginning, middle, end.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-087",
+    "title": "Protective Lines",
+    "prompt": "Draw lines forming a protective space.",
+    "tip": "Decide what is being protected.",
+    "timeMin": 4,
+    "timeMax": 7,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-088",
+    "title": "Chasing Lines",
+    "prompt": "Draw one line chasing another.",
+    "tip": "Speed changes show emotion.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-089",
+    "title": "Growing Maze",
+    "prompt": "Create a maze that grows as you draw.",
+    "tip": "Do not plan ahead.",
+    "timeMin": 6,
+    "timeMax": 9,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-090",
+    "title": "Broken Journey",
+    "prompt": "Draw a path that breaks and reconnects.",
+    "tip": "Each break changes direction.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-lines"
+    ]
+  },
+  {
+    "id": "PN-091",
+    "title": "Object With a Past",
+    "prompt": "Draw an object as if it has been used for many years.",
+    "tip": "Add small marks of use.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-092",
+    "title": "Just After Use",
+    "prompt": "Draw an object just after someone used it.",
+    "tip": "Imagine the person left moments ago.",
+    "timeMin": 4,
+    "timeMax": 7,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-093",
+    "title": "Hidden Side",
+    "prompt": "Draw only the side of an object that is usually hidden.",
+    "tip": "Turn it around slowly.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-094",
+    "title": "Partial Memory",
+    "prompt": "Draw an object from memory, then add missing parts after looking.",
+    "tip": "Notice what you forgot.",
+    "timeMin": 6,
+    "timeMax": 9,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-095",
+    "title": "Close Encounter",
+    "prompt": "Draw a very close-up view of an object.",
+    "tip": "Crop boldly.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-096",
+    "title": "Far View",
+    "prompt": "Draw the same object very small on the page.",
+    "tip": "Leave lots of empty space.",
+    "timeMin": 4,
+    "timeMax": 6,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-097",
+    "title": "Before Touch",
+    "prompt": "Draw an object before anyone touches it.",
+    "tip": "Keep it neat and calm.",
+    "timeMin": 4,
+    "timeMax": 7,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-098",
+    "title": "After Touch",
+    "prompt": "Draw the same object after it has been handled.",
+    "tip": "Let it feel disturbed.",
+    "timeMin": 4,
+    "timeMax": 7,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-099",
+    "title": "Empty Evidence",
+    "prompt": "Draw only the empty space left by an object.",
+    "tip": "The object is missing.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-observation"
+    ]
+  },
+  {
+    "id": "PN-100",
+    "title": "Object Story",
+    "prompt": "Draw an object and add one clue about its owner.",
+    "tip": "Small details matter.",
+    "timeMin": 6,
+    "timeMax": 9,
+    "tags": [
+      "playful-observation"
+    ]
   }
 ]
