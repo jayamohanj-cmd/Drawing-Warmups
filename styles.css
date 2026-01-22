@@ -207,3 +207,9 @@ body.presentation .layout{
 @media (max-width:980px){
   .layout{ grid-template-columns:1fr; }
 }
+/* Emphasize instructional content */
+.prompt-body {
+  font-weight: 600;          /* semi-bold, classroom readable */
+  line-height: 1.55;
+}
+
