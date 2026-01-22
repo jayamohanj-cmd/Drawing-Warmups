@@ -1,3 +1,5 @@
+import { startShaderBackground } from "./shader-bg.js";
+
 const PROMPTS_URL = "./data/prompts.json";
 
 const els = {
@@ -353,6 +355,8 @@ function wireButtons() {
 
 async function init() {
   setFontScale(getFontScale());
+  const canvas = document.getElementById("bgShader");
+  startShaderBackground(canvas);
 
   const res = await fetch(PROMPTS_URL, { cache: "no-store" });
   allPrompts = await res.json();
