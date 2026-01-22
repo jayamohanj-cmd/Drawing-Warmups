@@ -99,7 +99,7 @@ body::before{
     rgba(255,255,255,0.12),
     rgba(255,255,255,0.06)
   );
-  backdrop-filter: blur(18px) saturate(120%);
+  backdrop-filter: blur(25px) saturate(120%);
   -webkit-backdrop-filter: blur(18px) saturate(120%);
 
   border-radius: 20px;
@@ -121,8 +121,8 @@ body::before{
 }
 .prompt-panel {
   background: rgba(0,0,0,0.35);
-  border-radius: 16px;
-  padding: 1.4rem;
+  border-radius: 19px;
+  padding: 1.8rem;
   border: 1px solid rgba(255,255,255,0.12);
 }
 
