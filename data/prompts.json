@@ -2,9 +2,9 @@
   {
     "id": "PWD-001",
     "title": "Before and After",
-    "prompt": "Draw an object before and after it has been used.",
+    "prompt": "Draw an item before and after it has been used (for example: a new eraser and a used one, a peeled and unpeeled banana, or a clean and used plate).",
     "goal": "Notice small changes caused by use.",
-    "howTo": "Split the page into two parts. Keep the object the same size in both drawings.",
+    "howTo": "Split the page into two parts. Keep the item the same size in both drawings.",
     "timeMin": 6,
     "timeMax": 10,
     "tags": [
@@ -14,9 +14,9 @@
   {
     "id": "PWD-002",
     "title": "Only the Outline",
-    "prompt": "Draw an object using only its outer outline.",
-    "goal": "Focus on overall shape.",
-    "howTo": "Move your pencil slowly around the edge. Do not add details.",
+    "prompt": "Draw an everyday item using only its outer outline (for example: your shoe, water bottle, or pencil case).",
+    "goal": "Focus on overall shape instead of details.",
+    "howTo": "Move your pencil slowly around the edge. Do not draw inside details.",
     "timeMin": 4,
     "timeMax": 7,
     "tags": [
@@ -26,9 +26,9 @@
   {
     "id": "PWD-003",
     "title": "One Continuous Line",
-    "prompt": "Draw an object using one continuous line.",
+    "prompt": "Draw a continuous line drawing of an everyday item (for example: your shoe, headphones, or water bottle).",
     "goal": "Improve eye–hand coordination.",
-    "howTo": "Do not lift your pencil. Look at the object, not the paper.",
+    "howTo": "Do not lift your pencil once you begin. Keep your eyes on the item and move slowly.",
     "timeMin": 5,
     "timeMax": 8,
     "tags": [
@@ -38,9 +38,9 @@
   {
     "id": "PWD-004",
     "title": "Upside Down",
-    "prompt": "Draw an object upside down.",
-    "goal": "Break habits of drawing symbols.",
-    "howTo": "Turn the object or image upside down and draw what you see.",
+    "prompt": "Draw an item upside down (for example: a shoe, stapler, or pair of scissors).",
+    "goal": "Break habits of drawing from memory.",
+    "howTo": "Turn the item or the paper upside down and draw exactly what you see.",
     "timeMin": 5,
     "timeMax": 8,
     "tags": [
@@ -50,9 +50,9 @@
   {
     "id": "PWD-005",
     "title": "Two Angles",
-    "prompt": "Draw the same object from two different angles.",
-    "goal": "See how viewpoint changes form.",
-    "howTo": "Split the page in half and rotate the object slightly.",
+    "prompt": "Draw the same item from two different angles (for example: a chair from the front and side, or a bottle upright and tilted).",
+    "goal": "See how viewpoint changes shape.",
+    "howTo": "Split the page into two sections and rotate the item slightly.",
     "timeMin": 6,
     "timeMax": 9,
     "tags": [
@@ -62,9 +62,9 @@
   {
     "id": "PWD-006",
     "title": "Close-Up Detail",
-    "prompt": "Draw one small part of an object very large.",
-    "goal": "Slow down observation.",
-    "howTo": "Let one corner or detail fill the page.",
+    "prompt": "Draw one small part of an everyday item very large (for example: the cap of a bottle, the corner of a book, or the sole of a shoe).",
+    "goal": "Slow down and observe closely.",
+    "howTo": "Choose a small area and let it fill most of the page.",
     "timeMin": 5,
     "timeMax": 8,
     "tags": [
@@ -74,9 +74,9 @@
   {
     "id": "PWD-007",
     "title": "Cut Off",
-    "prompt": "Draw an object so part goes off the page.",
+    "prompt": "Draw an item so part of it goes off the edge of the page (for example: a chair, backpack, or shoe).",
     "goal": "Practice bold composition.",
-    "howTo": "Let the object extend beyond the paper edges.",
+    "howTo": "Let the drawing extend beyond the paper. Do not try to fit everything in.",
     "timeMin": 5,
     "timeMax": 8,
     "tags": [
@@ -86,9 +86,9 @@
   {
     "id": "PWD-008",
     "title": "Touch Points",
-    "prompt": "Draw only where an object touches the surface.",
+    "prompt": "Draw only where an item touches the table or floor (for example: chair legs, the bottom of a bottle, or the sole of a shoe).",
     "goal": "Notice weight and balance.",
-    "howTo": "Ignore the rest of the object.",
+    "howTo": "Ignore the rest of the item. Draw only the contact areas.",
     "timeMin": 4,
     "timeMax": 7,
     "tags": [
@@ -98,9 +98,9 @@
   {
     "id": "PWD-009",
     "title": "Big and Small",
-    "prompt": "Draw the same object once very big and once very small.",
+    "prompt": "Draw the same item once very big and once very small (for example: your shoe filling the page, then drawn tiny in a corner).",
     "goal": "Explore scale.",
-    "howTo": "Use most of the page for one, a small area for the other.",
+    "howTo": "Use most of the page for one drawing and a small space for the other.",
     "timeMin": 5,
     "timeMax": 8,
     "tags": [
@@ -110,9 +110,9 @@
   {
     "id": "PWD-010",
     "title": "Blind Drawing",
-    "prompt": "Draw an object without looking at your paper.",
-    "goal": "Strengthen observation.",
-    "howTo": "Keep eyes on the object the whole time.",
+    "prompt": "Draw an everyday item without looking at your paper (for example: your shoe or pencil case).",
+    "goal": "Strengthen observation and trust.",
+    "howTo": "Keep your eyes on the item the whole time. Do not correct mistakes.",
     "timeMin": 5,
     "timeMax": 8,
     "tags": [
@@ -122,9 +122,9 @@
   {
     "id": "PWD-011",
     "title": "Edges Over Time",
-    "prompt": "Draw worn edges of an object.",
-    "goal": "Notice signs of use.",
-    "howTo": "Focus on corners and seams.",
+    "prompt": "Draw worn edges of an item that is used often (for example: a book corner, desk edge, or shoe sole).",
+    "goal": "Notice signs of use over time.",
+    "howTo": "Focus on corners and edges rather than the whole form.",
     "timeMin": 5,
     "timeMax": 8,
     "tags": [
@@ -134,9 +134,9 @@
   {
     "id": "PWD-012",
     "title": "Before Cleaning",
-    "prompt": "Draw an object before and after cleaning.",
-    "goal": "Notice subtle differences.",
-    "howTo": "Split page into two equal sections.",
+    "prompt": "Draw an item before and after it has been cleaned (for example: a dirty plate and a clean one, or dusty shoes before and after wiping).",
+    "goal": "Notice subtle changes in surface and detail.",
+    "howTo": "Split the page into two equal sections.",
     "timeMin": 6,
     "timeMax": 9,
     "tags": [
@@ -146,9 +146,9 @@
   {
     "id": "PWD-013",
     "title": "Inside and Outside",
-    "prompt": "Draw the inside and outside of the same object.",
-    "goal": "Understand form through space.",
-    "howTo": "Use a cutaway or split page.",
+    "prompt": "Draw the inside and outside of the same item (for example: a backpack open and closed, or a pencil case zipped and unzipped).",
+    "goal": "Understand form through interior space.",
+    "howTo": "Use a cutaway view or split the page in two.",
     "timeMin": 6,
     "timeMax": 10,
     "tags": [
@@ -158,9 +158,9 @@
   {
     "id": "PWD-014",
     "title": "Shadow Shapes",
-    "prompt": "Draw only the shadow shapes of an object.",
+    "prompt": "Draw only the shadow shapes made by an item (for example: a bottle or chair under a light).",
     "goal": "See form without outlines.",
-    "howTo": "Ignore the object itself.",
+    "howTo": "Ignore the object itself and draw only the shadow.",
     "timeMin": 5,
     "timeMax": 8,
     "tags": [
@@ -170,9 +170,9 @@
   {
     "id": "PWD-015",
     "title": "From Below",
-    "prompt": "Draw an object as seen from below.",
+    "prompt": "Draw an item as seen from below (for example: a chair seat, desk underside, or hanging bag).",
     "goal": "Explore unusual viewpoints.",
-    "howTo": "Change your position and draw carefully.",
+    "howTo": "Change your position and draw what you actually see.",
     "timeMin": 4,
     "timeMax": 7,
     "tags": [
@@ -182,9 +182,9 @@
   {
     "id": "PWD-016",
     "title": "From Above",
-    "prompt": "Draw an object as seen from above.",
-    "goal": "Understand perspective.",
-    "howTo": "Look straight down at the object.",
+    "prompt": "Draw an item as seen from directly above (for example: your desk, notebook, or lunch box).",
+    "goal": "Understand how viewpoint changes shape.",
+    "howTo": "Look straight down and draw carefully.",
     "timeMin": 4,
     "timeMax": 7,
     "tags": [
@@ -194,9 +194,9 @@
   {
     "id": "PWD-017",
     "title": "Only Corners",
-    "prompt": "Draw only the corners or joints of an object.",
+    "prompt": "Draw only the corners or joints of an item (for example: chair joints or book corners).",
     "goal": "Focus on structure.",
-    "howTo": "Skip flat surfaces.",
+    "howTo": "Skip flat surfaces and details.",
     "timeMin": 4,
     "timeMax": 7,
     "tags": [
@@ -206,9 +206,9 @@
   {
     "id": "PWD-018",
     "title": "Slow Look",
-    "prompt": "Spend one minute looking, then draw slowly.",
-    "goal": "Improve patience.",
-    "howTo": "Do not rush marks.",
+    "prompt": "Spend one minute looking at an item, then draw it slowly (for example: a shoe or bottle).",
+    "goal": "Improve patience and focus.",
+    "howTo": "Do not rush marks once you begin drawing.",
     "timeMin": 5,
     "timeMax": 8,
     "tags": [
@@ -218,9 +218,9 @@
   {
     "id": "PWD-019",
     "title": "Memory Then Look",
-    "prompt": "Draw from memory, then add after observing.",
-    "goal": "Compare memory and reality.",
-    "howTo": "Use half time for each.",
+    "prompt": "Draw an item from memory first, then look at it and add what you missed (for example: your shoe or backpack).",
+    "goal": "Compare memory drawing with observation.",
+    "howTo": "Use about half the time for memory and half for looking.",
     "timeMin": 6,
     "timeMax": 9,
     "tags": [
@@ -229,10 +229,10 @@
   },
   {
     "id": "PWD-020",
-    "title": "Overlapping Objects",
-    "prompt": "Draw two objects overlapping.",
+    "title": "Overlapping Items",
+    "prompt": "Draw two everyday items overlapping (for example: a notebook on top of a book).",
     "goal": "Understand spatial relationships.",
-    "howTo": "Decide which is in front.",
+    "howTo": "Decide which item is in front before you begin.",
     "timeMin": 5,
     "timeMax": 8,
     "tags": [
@@ -242,9 +242,9 @@
   {
     "id": "PWD-021",
     "title": "Negative Space",
-    "prompt": "Draw the space around an object.",
-    "goal": "See shapes of emptiness.",
-    "howTo": "Outline gaps and spaces.",
+    "prompt": "Draw the space around an item instead of the item itself (for example: the gaps around chair legs).",
+    "goal": "See shapes made by empty space.",
+    "howTo": "Outline the spaces between and around the item.",
     "timeMin": 6,
     "timeMax": 9,
     "tags": [
@@ -254,7 +254,7 @@
   {
     "id": "PWD-022",
     "title": "Partial View",
-    "prompt": "Draw only half of an object.",
+    "prompt": "Draw only half of an item (for example: half a shoe or half a bottle).",
     "goal": "Practice inference.",
     "howTo": "Let the viewer imagine the rest.",
     "timeMin": 4,
@@ -265,10 +265,10 @@
   },
   {
     "id": "PWD-023",
-    "title": "Repeated Object",
-    "prompt": "Draw the same object three times.",
-    "goal": "Build confidence.",
-    "howTo": "Each drawing slightly faster.",
+    "title": "Repeated Item",
+    "prompt": "Draw the same item three times (for example: your shoe) each time slightly faster.",
+    "goal": "Build confidence through repetition.",
+    "howTo": "Do not erase. Let each drawing be looser.",
     "timeMin": 5,
     "timeMax": 8,
     "tags": [
@@ -278,9 +278,9 @@
   {
     "id": "PWD-024",
     "title": "Loose Then Careful",
-    "prompt": "Draw once loosely, once carefully.",
-    "goal": "Notice differences.",
-    "howTo": "Use same object both times.",
+    "prompt": "Draw an item once loosely and once carefully (for example: a backpack or bottle).",
+    "goal": "Notice differences in approach.",
+    "howTo": "Use the same item both times.",
     "timeMin": 6,
     "timeMax": 9,
     "tags": [
@@ -290,7 +290,7 @@
   {
     "id": "PWD-025",
     "title": "Final Observation",
-    "prompt": "Draw an object of your choice slowly.",
+    "prompt": "Draw an everyday item of your choice slowly and carefully (for example: your shoe, bag, or desk).",
     "goal": "Apply observation skills.",
     "howTo": "Focus on accuracy over speed.",
     "timeMin": 6,
@@ -302,9 +302,9 @@
   {
     "id": "PWD-026",
     "title": "Before and After Magic",
-    "prompt": "Draw an object before and after magic changes it.",
-    "goal": "Explore transformation.",
-    "howTo": "Change only one feature.",
+    "prompt": "Draw an everyday item before and after something magical happens to it (for example: a shoe that can fly, or a bottle that never empties).",
+    "goal": "Use imagination through simple transformation.",
+    "howTo": "Split the page into two parts. Change only one or two features.",
     "timeMin": 6,
     "timeMax": 10,
     "tags": [
@@ -314,9 +314,9 @@
   {
     "id": "PWD-027",
     "title": "Secret Inside",
-    "prompt": "Draw an object with something hidden inside.",
-    "goal": "Combine observation and imagination.",
-    "howTo": "Use a cutaway view.",
+    "prompt": "Draw an everyday item with something hidden inside it (for example: a backpack with a secret room, or a book hiding a world).",
+    "goal": "Combine observation with imagination.",
+    "howTo": "Use a cutaway or opening to show what is inside.",
     "timeMin": 5,
     "timeMax": 8,
     "tags": [
@@ -326,9 +326,9 @@
   {
     "id": "PWD-028",
     "title": "Strange Version",
-    "prompt": "Draw a normal object in a strange version.",
-    "goal": "Use imagination safely.",
-    "howTo": "Change only one thing.",
+    "prompt": "Draw a normal item in a strange version (for example: a chair with only one leg, or a pencil that bends).",
+    "goal": "Use imagination while keeping the item recognizable.",
+    "howTo": "Change only one thing about the item.",
     "timeMin": 5,
     "timeMax": 8,
     "tags": [
@@ -337,22 +337,10 @@
   },
   {
     "id": "PWD-029",
-    "title": "Future Version",
-    "prompt": "Draw a common object from the future.",
-    "goal": "Imagine change.",
-    "howTo": "Keep the object recognizable.",
-    "timeMin": 6,
-    "timeMax": 9,
-    "tags": [
-      "playful-imagination"
-    ]
-  },
-  {
-    "id": "PWD-030",
-    "title": "Object With Feelings",
-    "prompt": "Draw an object showing an emotion.",
-    "goal": "Express feeling visually.",
-    "howTo": "Use shape and posture.",
+    "title": "Living Object",
+    "prompt": "Draw an everyday item as if it were alive (for example: a backpack that slouches or a lamp that looks curious).",
+    "goal": "Animate familiar forms.",
+    "howTo": "Add posture, movement, or expression.",
     "timeMin": 5,
     "timeMax": 8,
     "tags": [
@@ -360,11 +348,23 @@
     ]
   },
   {
-    "id": "PWD-031",
+    "id": "PWD-030",
     "title": "Pocket World",
-    "prompt": "Draw a tiny world that fits in your pocket.",
-    "goal": "Explore scale.",
-    "howTo": "Mix large and small elements.",
+    "prompt": "Draw a tiny world that could fit inside a small container (for example: a city in a matchbox or a forest in a jar).",
+    "goal": "Explore scale in a playful way.",
+    "howTo": "Include both very small and very large elements together.",
+    "timeMin": 6,
+    "timeMax": 9,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PWD-031",
+    "title": "Future Version",
+    "prompt": "Draw a common item as it might look in the future (for example: a futuristic backpack or phone).",
+    "goal": "Imagine change while keeping purpose clear.",
+    "howTo": "Change only one or two features.",
     "timeMin": 6,
     "timeMax": 9,
     "tags": [
@@ -373,46 +373,22 @@
   },
   {
     "id": "PWD-032",
-    "title": "Living Object",
-    "prompt": "Draw an everyday object as if alive.",
-    "goal": "Animate form.",
-    "howTo": "Add posture or movement.",
-    "timeMin": 5,
-    "timeMax": 8,
+    "title": "Creature With a Job",
+    "prompt": "Draw a creature that has a simple job (for example: cleaning, carrying, or guarding).",
+    "goal": "Connect imagination to purpose.",
+    "howTo": "Decide the job first, then design the creature.",
+    "timeMin": 6,
+    "timeMax": 9,
     "tags": [
       "playful-imagination"
     ]
   },
   {
     "id": "PWD-033",
-    "title": "Creature With a Job",
-    "prompt": "Draw a creature with a simple job.",
-    "goal": "Connect form to purpose.",
-    "howTo": "Decide the job first.",
-    "timeMin": 6,
-    "timeMax": 9,
-    "tags": [
-      "playful-imagination"
-    ]
-  },
-  {
-    "id": "PWD-034",
-    "title": "Tool for One Task",
-    "prompt": "Draw a tool for one specific task.",
-    "goal": "Design with focus.",
-    "howTo": "Explain task visually.",
-    "timeMin": 6,
-    "timeMax": 9,
-    "tags": [
-      "playful-imagination"
-    ]
-  },
-  {
-    "id": "PWD-035",
-    "title": "Room Inside Room",
-    "prompt": "Draw a room hidden inside another room.",
-    "goal": "Explore space.",
-    "howTo": "Show entrance clearly.",
+    "title": "Broken and Fixed",
+    "prompt": "Draw an item broken and then fixed (for example: a cracked screen or a torn shoe that has been repaired).",
+    "goal": "Think about problem-solving through drawing.",
+    "howTo": "Split the page into two parts and show the repair clearly.",
     "timeMin": 6,
     "timeMax": 10,
     "tags": [
@@ -420,11 +396,35 @@
     ]
   },
   {
+    "id": "PWD-034",
+    "title": "Moving Furniture",
+    "prompt": "Draw a piece of furniture that can move on its own (for example: a chair that walks or a desk on wheels).",
+    "goal": "Animate everyday forms.",
+    "howTo": "Show how the furniture moves.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PWD-035",
+    "title": "Friendly Machine",
+    "prompt": "Draw a machine designed to help people (for example: a robot that organizes books).",
+    "goal": "Think positively about design.",
+    "howTo": "Keep shapes simple and clear.",
+    "timeMin": 6,
+    "timeMax": 9,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
     "id": "PWD-036",
-    "title": "Object That Grows",
-    "prompt": "Draw an object that grows over time.",
-    "goal": "Show change.",
-    "howTo": "Use two stages.",
+    "title": "Strange Vehicle",
+    "prompt": "Draw a vehicle designed for an unusual place (for example: a snow vehicle, underwater bus, or desert bike).",
+    "goal": "Adapt design to environment.",
+    "howTo": "Think about where it travels.",
     "timeMin": 6,
     "timeMax": 9,
     "tags": [
@@ -433,10 +433,10 @@
   },
   {
     "id": "PWD-037",
-    "title": "Object That Shrinks",
-    "prompt": "Draw an object shrinking.",
-    "goal": "Play with scale.",
-    "howTo": "Show before and after.",
+    "title": "Object With Memory",
+    "prompt": "Draw an everyday item that shows its past through marks or changes (for example: a scratched desk or worn backpack).",
+    "goal": "Tell a story through form.",
+    "howTo": "Add marks that suggest history.",
     "timeMin": 6,
     "timeMax": 9,
     "tags": [
@@ -445,22 +445,22 @@
   },
   {
     "id": "PWD-038",
-    "title": "Moving Furniture",
-    "prompt": "Draw furniture that moves.",
-    "goal": "Animate objects.",
-    "howTo": "Show how it moves.",
-    "timeMin": 5,
-    "timeMax": 8,
+    "title": "Temporary Item",
+    "prompt": "Draw an item meant to disappear after use (for example: an ice sculpture or sand drawing).",
+    "goal": "Think about time and change.",
+    "howTo": "Show how it begins and ends.",
+    "timeMin": 6,
+    "timeMax": 9,
     "tags": [
       "playful-imagination"
     ]
   },
   {
     "id": "PWD-039",
-    "title": "Friendly Machine",
-    "prompt": "Draw a machine meant to help.",
-    "goal": "Positive design thinking.",
-    "howTo": "Keep shapes simple.",
+    "title": "Object That Reacts",
+    "prompt": "Draw an item that reacts to weather or surroundings (for example: shoes that grow in rain or a hat that shrinks in sun).",
+    "goal": "Show cause and effect visually.",
+    "howTo": "Decide what triggers the reaction.",
     "timeMin": 6,
     "timeMax": 9,
     "tags": [
@@ -469,22 +469,22 @@
   },
   {
     "id": "PWD-040",
-    "title": "Strange Vehicle",
-    "prompt": "Draw a vehicle for an unusual place.",
-    "goal": "Adapt design.",
-    "howTo": "Think of terrain.",
-    "timeMin": 6,
-    "timeMax": 9,
+    "title": "Tiny Helper",
+    "prompt": "Draw a tiny helper creature that assists with a daily task (for example: organizing pencils).",
+    "goal": "Play with scale and purpose.",
+    "howTo": "Show its size clearly next to objects.",
+    "timeMin": 5,
+    "timeMax": 8,
     "tags": [
       "playful-imagination"
     ]
   },
   {
     "id": "PWD-041",
-    "title": "Object With Memory",
-    "prompt": "Draw an object that remembers its past.",
-    "goal": "Tell story visually.",
-    "howTo": "Add marks of history.",
+    "title": "New Use",
+    "prompt": "Draw an everyday item being used in a new way (for example: a book as a bridge or a shoe as a planter).",
+    "goal": "Reimagine function.",
+    "howTo": "Keep the original form recognizable.",
     "timeMin": 6,
     "timeMax": 9,
     "tags": [
@@ -493,57 +493,9 @@
   },
   {
     "id": "PWD-042",
-    "title": "Temporary Object",
-    "prompt": "Draw an object meant to disappear.",
-    "goal": "Think about time.",
-    "howTo": "Show how it ends.",
-    "timeMin": 6,
-    "timeMax": 9,
-    "tags": [
-      "playful-imagination"
-    ]
-  },
-  {
-    "id": "PWD-043",
-    "title": "Object That Reacts",
-    "prompt": "Draw an object reacting to weather.",
-    "goal": "Cause and effect.",
-    "howTo": "Show reaction clearly.",
-    "timeMin": 6,
-    "timeMax": 9,
-    "tags": [
-      "playful-imagination"
-    ]
-  },
-  {
-    "id": "PWD-044",
-    "title": "Tiny Helper",
-    "prompt": "Draw a tiny helper creature.",
-    "goal": "Scale play.",
-    "howTo": "Show its size clearly.",
-    "timeMin": 5,
-    "timeMax": 8,
-    "tags": [
-      "playful-imagination"
-    ]
-  },
-  {
-    "id": "PWD-045",
-    "title": "New Use",
-    "prompt": "Draw an object used in a new way.",
-    "goal": "Reimagine function.",
-    "howTo": "Keep original form.",
-    "timeMin": 6,
-    "timeMax": 9,
-    "tags": [
-      "playful-imagination"
-    ]
-  },
-  {
-    "id": "PWD-046",
     "title": "Dream Version",
-    "prompt": "Draw an object from a dream.",
-    "goal": "Imagination.",
+    "prompt": "Draw an everyday item as it appears in a dream (for example: floating shoes or melting clocks).",
+    "goal": "Explore imagination freely.",
     "howTo": "Change one or two features.",
     "timeMin": 5,
     "timeMax": 8,
@@ -552,23 +504,11 @@
     ]
   },
   {
-    "id": "PWD-047",
-    "title": "Broken and Fixed",
-    "prompt": "Draw an object broken and then fixed.",
-    "goal": "Problem solving.",
-    "howTo": "Show repair clearly.",
-    "timeMin": 6,
-    "timeMax": 10,
-    "tags": [
-      "playful-imagination"
-    ]
-  },
-  {
-    "id": "PWD-048",
+    "id": "PWD-043",
     "title": "Object With Sound",
-    "prompt": "Draw an object that makes a sound.",
+    "prompt": "Draw an item that makes a sound (for example: a bell, alarm clock, or speaker).",
     "goal": "Visualize sound.",
-    "howTo": "Use lines to suggest sound.",
+    "howTo": "Use lines or shapes to suggest sound.",
     "timeMin": 5,
     "timeMax": 8,
     "tags": [
@@ -576,11 +516,71 @@
     ]
   },
   {
-    "id": "PWD-049",
+    "id": "PWD-044",
     "title": "Object That Floats",
-    "prompt": "Draw an object that floats.",
-    "goal": "Defy gravity.",
+    "prompt": "Draw an item floating in the air or water (for example: a chair floating in a room or a bottle in water).",
+    "goal": "Play with gravity.",
     "howTo": "Show floating clearly.",
+    "timeMin": 5,
+    "timeMax": 8,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PWD-045",
+    "title": "Room Inside Room",
+    "prompt": "Draw a small room hidden inside a larger room (for example: a secret room inside a classroom).",
+    "goal": "Explore layered space.",
+    "howTo": "Show how the spaces connect.",
+    "timeMin": 6,
+    "timeMax": 10,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PWD-046",
+    "title": "Tool for One Task",
+    "prompt": "Draw a tool made for one very specific task (for example: a machine that erases mistakes).",
+    "goal": "Focus design thinking.",
+    "howTo": "Make the task clear through the drawing.",
+    "timeMin": 6,
+    "timeMax": 9,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PWD-047",
+    "title": "Object That Grows",
+    "prompt": "Draw an item that grows over time (for example: shoes that grow with you).",
+    "goal": "Show change through stages.",
+    "howTo": "Draw at least two stages.",
+    "timeMin": 6,
+    "timeMax": 9,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PWD-048",
+    "title": "Object That Shrinks",
+    "prompt": "Draw an item that shrinks over time (for example: a backpack that gets smaller).",
+    "goal": "Explore scale change.",
+    "howTo": "Show before and after.",
+    "timeMin": 6,
+    "timeMax": 9,
+    "tags": [
+      "playful-imagination"
+    ]
+  },
+  {
+    "id": "PWD-049",
+    "title": "Object With Feelings",
+    "prompt": "Draw an everyday item showing an emotion (for example: a sad chair or excited lamp).",
+    "goal": "Express feeling through form.",
+    "howTo": "Use posture or shape to show emotion.",
     "timeMin": 5,
     "timeMax": 8,
     "tags": [
@@ -590,9 +590,9 @@
   {
     "id": "PWD-050",
     "title": "Final Imagination",
-    "prompt": "Draw an object of your choice imaginatively.",
+    "prompt": "Draw an everyday item of your choice imaginatively (for example: your shoe or backpack with a creative twist).",
     "goal": "Apply imagination skills.",
-    "howTo": "Keep drawing simple and clear.",
+    "howTo": "Keep the drawing simple and clear.",
     "timeMin": 6,
     "timeMax": 10,
     "tags": [
