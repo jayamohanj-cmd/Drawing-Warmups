@@ -4,17 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Drawing Warmups</title>
-
-  <!-- Styles -->
   <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-
-  <!-- Animated shader background -->
   <canvas id="bgShader" aria-hidden="true"></canvas>
 
-  <!-- Top Bar -->
   <header class="topbar">
     <div class="brand">
       <div class="dot"></div>
@@ -25,56 +20,53 @@
     </div>
 
     <div class="top-actions">
+      <button id="btnPalette" class="btn ghost" title="Toggle background palette (C)">🎨</button>
       <button id="btnPresent" class="btn ghost" title="Presentation mode (P)">🎥</button>
       <button id="btnFullscreen" class="btn ghost" title="Fullscreen (F)">⛶</button>
       <button id="btnReset" class="btn ghost" title="Reset deck">↻</button>
     </div>
   </header>
 
-  <!-- Main Layout -->
   <main class="layout">
 
-    <!-- Prompt Area -->
     <section class="card prompt-card">
 
-      <!-- Meta pills -->
       <div class="meta-row">
-        <div class="pill" id="pillTime">— min</div>
-        <div class="pill" id="pillDifficulty">Level —</div>
+        <div class="pill" id="pillTime">—</div>
         <div class="pill subtle" id="pillId">—</div>
       </div>
 
-      <!-- Prompt Panel -->
       <div class="prompt-panel">
-
         <div class="prompt-title-row">
-          <div id="promptTitle" class="prompt-title">
-            Click “New Prompt” to begin
+          <div id="promptTitle" class="prompt-title">Click “New Prompt” to begin</div>
+          <button id="btnFavorite" class="fav-btn" title="Favorite this prompt">☆</button>
+        </div>
+
+        <div id="promptText" class="prompt-text">Your warm-up prompt will appear here.</div>
+
+        <!-- NEW: Goal + How To -->
+        <div class="prompt-sections">
+          <div class="prompt-section">
+            <div class="prompt-label">Goal</div>
+            <div id="promptGoal" class="prompt-body">—</div>
           </div>
-          <button id="btnFavorite" class="fav-btn" title="Favorite this prompt">
-            ☆
-          </button>
-        </div>
 
-        <div id="promptText" class="prompt-text">
-          Your warm-up prompt will appear here.
+          <div class="prompt-section">
+            <div class="prompt-label">How to begin</div>
+            <div id="promptHowTo" class="prompt-body">—</div>
+          </div>
         </div>
-
       </div>
 
-      <!-- Tags -->
       <div class="tag-row" id="tagRow"></div>
 
-      <!-- Controls -->
       <div class="controls">
-
         <div class="left-controls">
           <button id="btnBack" class="btn ghost" disabled>← Back</button>
           <button id="btnNew" class="btn primary">New Prompt</button>
         </div>
 
         <div class="right-controls">
-
           <div class="font-controls">
             <span class="label">Text</span>
             <button id="btnFontDown" class="btn ghost">A−</button>
@@ -83,17 +75,15 @@
 
           <div class="timer-controls">
             <span class="label">Timer</span>
-            <button class="btn ghost timer" data-min="1">1</button>
-            <button class="btn ghost timer" data-min="2">2</button>
+            <button class="btn ghost timer" data-min="3">3</button>
             <button class="btn ghost timer" data-min="5">5</button>
+            <button class="btn ghost timer" data-min="8">8</button>
             <button class="btn ghost timer" data-min="10">10</button>
             <button id="btnStopTimer" class="btn ghost" title="Stop timer">■</button>
           </div>
-
         </div>
       </div>
 
-      <!-- Timer -->
       <div class="timer-bar">
         <div class="timer-status" id="timerStatus">Timer: off</div>
         <div class="progress">
@@ -103,7 +93,6 @@
 
     </section>
 
-    <!-- Filters (hidden in Presentation Mode) -->
     <aside class="card filter-card">
       <div class="filter-title">Filters</div>
       <div class="filter-subtitle">Optional — narrow the deck</div>
@@ -111,28 +100,27 @@
       <div class="filter-group">
         <div class="filter-label">Mode</div>
         <div class="chip-row">
-          <button class="chip">Playful Lines</button>
-          <button class="chip">Observation</button>
-          <button class="chip">Gesture</button>
-          <button class="chip">Imagination</button>
+          <button class="chip" data-tag="playful-lines">Playful Lines</button>
+          <button class="chip" data-tag="playful-observation">Observation</button>
+          <button class="chip" data-tag="playful-gesture">Gesture</button>
+          <button class="chip" data-tag="playful-imagination">Imagination</button>
+          <button class="chip" data-tag="all">All</button>
         </div>
       </div>
 
       <div class="filter-footer">
         <div class="small-note">
-          Tip: Press <b>N</b> for new prompt · <b>P</b> for presentation mode
+          Tip: Press <b>N</b> new · <b>B</b> back · <b>P</b> present · <b>C</b> palette
         </div>
       </div>
     </aside>
 
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     Designed for teachers · Built for playful creativity
   </footer>
 
-  <!-- App -->
   <script type="module" src="./app.js"></script>
 </body>
 </html>
