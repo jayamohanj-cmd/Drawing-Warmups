@@ -68,8 +68,9 @@ export function startShaderBackground(canvas) {
       vec3 col = palette(g, u_palette);
 
       // Depth + vignette
-      float vignette = smoothstep(1.2, 0.35, length(uv));
+      float vignette = smoothstep(1.35, 0.25, length(uv));
       col *= vignette;
+      col *= 1.10;
 
       gl_FragColor = vec4(col, 1.0);
     }
