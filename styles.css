@@ -212,4 +212,28 @@ body.presentation .layout{
   font-weight: 600;          /* semi-bold, classroom readable */
   line-height: 1.55;
 }
+/* Instruction sections (Goal / How to begin) */
+.prompt-sections {
+  margin-top: 1.2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.prompt-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0.85;
+  margin-bottom: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+
+.prompt-body {
+  font-weight: 600;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
 
