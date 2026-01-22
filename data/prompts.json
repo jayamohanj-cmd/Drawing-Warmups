@@ -1,0 +1,272 @@
+[
+  {
+    "id": "DX-0001",
+    "title": "Blind contour: your hand",
+    "prompt": "Without looking at your paper, draw your non-dominant hand slowly. Keep your pen on the page the whole time.",
+    "time": 2,
+    "difficulty": 2,
+    "tags": ["line", "observation", "contour"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0002",
+    "title": "Gesture: 10-second poses",
+    "prompt": "Draw 8 stick-figure poses in 10 seconds each. Focus on action, not details.",
+    "time": 2,
+    "difficulty": 1,
+    "tags": ["gesture", "movement", "speed"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0003",
+    "title": "Negative space: chair gaps",
+    "prompt": "Draw only the empty spaces inside and around a chair. Do not draw the chair itself.",
+    "time": 5,
+    "difficulty": 3,
+    "tags": ["composition", "negative-space", "observation"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0004",
+    "title": "Texture study: 5 marks",
+    "prompt": "Pick one object near you. Create 5 different textures using only line marks (no shading).",
+    "time": 5,
+    "difficulty": 2,
+    "tags": ["texture", "line", "marks"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0005",
+    "title": "Value scale with one pencil",
+    "prompt": "Make a 7-step value scale from white to dark using pressure only.",
+    "time": 5,
+    "difficulty": 2,
+    "tags": ["value", "control", "shading"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0006",
+    "title": "Two-line drawing",
+    "prompt": "Draw a bicycle (or any complex object) using only TWO continuous lines. No lifting your pen.",
+    "time": 5,
+    "difficulty": 2,
+    "tags": ["line", "constraint", "creativity"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0007",
+    "title": "Silhouette: simple to bold",
+    "prompt": "Draw 3 silhouettes of the same object: simple, medium detail, bold graphic.",
+    "time": 5,
+    "difficulty": 2,
+    "tags": ["shape", "design", "composition"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0008",
+    "title": "Memory drawing: yesterday’s snack",
+    "prompt": "From memory, draw something you ate yesterday. Add 3 labels for details you remember.",
+    "time": 2,
+    "difficulty": 1,
+    "tags": ["memory", "story", "observation"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0009",
+    "title": "Warmup circles",
+    "prompt": "Fill the page with circles in different sizes. Try to keep them smooth and confident.",
+    "time": 1,
+    "difficulty": 1,
+    "tags": ["control", "line", "eye-hand"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0010",
+    "title": "One-minute still life",
+    "prompt": "Choose 3 objects. Sketch the big shapes only. No details, no shading.",
+    "time": 1,
+    "difficulty": 1,
+    "tags": ["shape", "speed", "observation"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0011",
+    "title": "Perspective: box from imagination",
+    "prompt": "Draw 3 boxes at different angles. Add a horizon line and keep edges consistent.",
+    "time": 5,
+    "difficulty": 3,
+    "tags": ["perspective", "space", "structure"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0012",
+    "title": "Transform: fish → vehicle",
+    "prompt": "Start by drawing a fish. Then gradually transform it into a vehicle across 4 small sketches.",
+    "time": 5,
+    "difficulty": 2,
+    "tags": ["creativity", "transformation", "shape"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0013",
+    "title": "Contour + cross-contour",
+    "prompt": "Draw a shoe. Add curved cross-contour lines to show form wrapping around it.",
+    "time": 5,
+    "difficulty": 3,
+    "tags": ["form", "contour", "space"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0014",
+    "title": "Opposite hand challenge",
+    "prompt": "Draw a simple portrait using your non-dominant hand. Keep it playful and loose.",
+    "time": 2,
+    "difficulty": 2,
+    "tags": ["constraint", "creativity", "control"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0015",
+    "title": "Design: 12 tiny icons",
+    "prompt": "Create 12 tiny icons for classroom objects (eraser, pencil, ruler, etc.). Keep them simple.",
+    "time": 5,
+    "difficulty": 2,
+    "tags": ["design", "shape", "simplification"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0016",
+    "title": "Line weight ladder",
+    "prompt": "Draw 10 straight lines. Start very light and gradually increase line weight each line.",
+    "time": 2,
+    "difficulty": 1,
+    "tags": ["line", "control", "eye-hand"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0017",
+    "title": "3 angles: the same object",
+    "prompt": "Pick one object and draw it from 3 different angles. Keep each sketch small.",
+    "time": 5,
+    "difficulty": 2,
+    "tags": ["observation", "form", "rotation"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0018",
+    "title": "Shadow shapes only",
+    "prompt": "Draw only the cast shadow shapes of 2 objects. No outlines of the objects.",
+    "time": 5,
+    "difficulty": 3,
+    "tags": ["value", "shape", "light"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0019",
+    "title": "Pairs: mirror drawing",
+    "prompt": "In pairs: one person draws a simple shape; the other mirrors it across an imaginary line.",
+    "time": 5,
+    "difficulty": 1,
+    "tags": ["pairs", "symmetry", "eye-hand"],
+    "mode": "pairs"
+  },
+  {
+    "id": "DX-0020",
+    "title": "Whole class: 1-line story chain",
+    "prompt": "Whole class: each student draws one object, passes it on. Next person adds something that changes the story.",
+    "time": 10,
+    "difficulty": 2,
+    "tags": ["story", "creativity", "collaboration"],
+    "mode": "whole-class"
+  },
+  {
+    "id": "DX-0021",
+    "title": "Composition: rule of thirds",
+    "prompt": "Draw a simple scene and place the focal point on a rule-of-thirds intersection.",
+    "time": 5,
+    "difficulty": 2,
+    "tags": ["composition", "design", "focus"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0022",
+    "title": "Pattern from nature",
+    "prompt": "Invent a repeating pattern inspired by leaves, shells, waves, or stones. Fill a small rectangle.",
+    "time": 5,
+    "difficulty": 2,
+    "tags": ["pattern", "design", "texture"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0023",
+    "title": "Zoom in x3",
+    "prompt": "Draw an object three times: full view, half zoom, extreme close-up. Focus on shapes.",
+    "time": 5,
+    "difficulty": 2,
+    "tags": ["composition", "shape", "observation"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0024",
+    "title": "Only triangles",
+    "prompt": "Draw a face using only triangle shapes. No curves allowed.",
+    "time": 2,
+    "difficulty": 2,
+    "tags": ["constraint", "shape", "design"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0025",
+    "title": "Speed ellipses",
+    "prompt": "Draw 20 ellipses at different angles. Try to keep them smooth and aligned.",
+    "time": 2,
+    "difficulty": 2,
+    "tags": ["control", "form", "eye-hand"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0026",
+    "title": "Value: 3-tone poster",
+    "prompt": "Draw an object using only 3 values: light, mid, dark. No gradients.",
+    "time": 5,
+    "difficulty": 2,
+    "tags": ["value", "design", "shape"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0027",
+    "title": "Perspective: hallway",
+    "prompt": "Draw a simple hallway using one-point perspective. Add 3 doors or posters.",
+    "time": 10,
+    "difficulty": 3,
+    "tags": ["perspective", "space", "structure"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0028",
+    "title": "Character from 3 shapes",
+    "prompt": "Create a character using only 3 base shapes (circle, square, triangle). Add 2 accessories.",
+    "time": 5,
+    "difficulty": 1,
+    "tags": ["creativity", "shape", "design"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0029",
+    "title": "Sound to line",
+    "prompt": "Listen to classroom sounds for 30 seconds. Translate them into lines and marks on paper.",
+    "time": 2,
+    "difficulty": 1,
+    "tags": ["abstract", "marks", "creativity"],
+    "mode": "individual"
+  },
+  {
+    "id": "DX-0030",
+    "title": "Object + impossible twist",
+    "prompt": "Draw a normal object, then add one impossible feature (gravity flip, infinite loop, melting, etc.).",
+    "time": 5,
+    "difficulty": 2,
+    "tags": ["creativity", "surreal", "design"],
+    "mode": "individual"
+  }
+]
