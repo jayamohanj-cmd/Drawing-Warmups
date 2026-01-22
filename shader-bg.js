@@ -45,17 +45,23 @@ float noise(vec2 p){
 }
 
 /* warm orange / pink palette */
-vec3 palette(float t){
-  vec3 orange = vec3(1.00, 0.55, 0.20);
-  vec3 coral  = vec3(1.00, 0.35, 0.45);
-  vec3 pink   = vec3(0.95, 0.55, 0.75);
+vec3 palette(float t, int mode){
+  // mode 0 = orange/red
+  // mode 1 = blue/purple
 
-  return mix(
-    mix(orange, coral, smoothstep(0.2, 0.6, t)),
-    pink,
-    smoothstep(0.6, 1.0, t)
-  );
+  if (mode == 0) {
+    // 🔥 ORANGE → RED (NO PINK POSSIBLE)
+    vec3 orange = vec3(1.00, 0.45, 0.15);
+    vec3 red    = vec3(0.85, 0.15, 0.10);
+    return mix(orange, red, smoothstep(0.2, 0.9, t));
+  } else {
+    // 🌌 BLUE → PURPLE (COOL, NO MAGENTA)
+    vec3 blue   = vec3(0.20, 0.35, 0.95);
+    vec3 purple = vec3(0.45, 0.25, 0.85);
+    return mix(blue, purple, smoothstep(0.2, 0.9, t));
+  }
 }
+
 
 void main(){
   vec2 uv = v_uv;
@@ -75,7 +81,10 @@ void main(){
   f += (g - 0.5) * 0.08;
 
   /* color */
-  vec3 col = palette(clamp(f, 0.0, 1.0));
+vec3 col = palette(clamp(f, 0.0, 1.0), 1);
+col *= 0.92;
+
+
 
   /* warm glow center */
   float glow = smoothstep(0.9, 0.2, length(p));
