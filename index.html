@@ -4,57 +4,81 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Drawing Warmups</title>
+
+  <!-- Styles -->
   <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-  <!-- Optional shader background -->
+
+  <!-- Animated shader background -->
   <canvas id="bgShader" aria-hidden="true"></canvas>
 
+  <!-- Top Bar -->
   <header class="topbar">
     <div class="brand">
       <div class="dot"></div>
       <div>
         <div class="title">Drawing Warmups</div>
-        <div class="subtitle">Mixed + Balanced • One-click classroom prompts</div>
+        <div class="subtitle">Playful creative warm-ups for art class</div>
       </div>
     </div>
 
     <div class="top-actions">
-      <button id="btnFullscreen" class="btn ghost" title="Fullscreen">⛶</button>
+      <button id="btnPresent" class="btn ghost" title="Presentation mode (P)">🎥</button>
+      <button id="btnFullscreen" class="btn ghost" title="Fullscreen (F)">⛶</button>
       <button id="btnReset" class="btn ghost" title="Reset deck">↻</button>
     </div>
   </header>
 
+  <!-- Main Layout -->
   <main class="layout">
+
+    <!-- Prompt Area -->
     <section class="card prompt-card">
+
+      <!-- Meta pills -->
       <div class="meta-row">
         <div class="pill" id="pillTime">— min</div>
         <div class="pill" id="pillDifficulty">Level —</div>
         <div class="pill subtle" id="pillId">—</div>
       </div>
 
-      <!-- Prompt panel makes text pop on projectors -->
+      <!-- Prompt Panel -->
       <div class="prompt-panel">
-        <div id="promptTitle" class="prompt-title">Click “New Prompt” to begin</div>
-        <div id="promptText" class="prompt-text">
-          Your prompt will appear here in big, classroom-friendly text.
+
+        <div class="prompt-title-row">
+          <div id="promptTitle" class="prompt-title">
+            Click “New Prompt” to begin
+          </div>
+          <button id="btnFavorite" class="fav-btn" title="Favorite this prompt">
+            ☆
+          </button>
         </div>
+
+        <div id="promptText" class="prompt-text">
+          Your warm-up prompt will appear here.
+        </div>
+
       </div>
 
+      <!-- Tags -->
       <div class="tag-row" id="tagRow"></div>
 
+      <!-- Controls -->
       <div class="controls">
+
         <div class="left-controls">
           <button id="btnBack" class="btn ghost" disabled>← Back</button>
           <button id="btnNew" class="btn primary">New Prompt</button>
         </div>
 
         <div class="right-controls">
+
           <div class="font-controls">
             <span class="label">Text</span>
-            <button class="btn ghost" id="btnFontDown" title="Smaller">A−</button>
-            <button class="btn ghost" id="btnFontUp" title="Larger">A+</button>
+            <button id="btnFontDown" class="btn ghost">A−</button>
+            <button id="btnFontUp" class="btn ghost">A+</button>
           </div>
 
           <div class="timer-controls">
@@ -63,60 +87,52 @@
             <button class="btn ghost timer" data-min="2">2</button>
             <button class="btn ghost timer" data-min="5">5</button>
             <button class="btn ghost timer" data-min="10">10</button>
-            <button class="btn ghost" id="btnStopTimer" title="Stop timer">■</button>
+            <button id="btnStopTimer" class="btn ghost" title="Stop timer">■</button>
           </div>
+
         </div>
       </div>
 
+      <!-- Timer -->
       <div class="timer-bar">
         <div class="timer-status" id="timerStatus">Timer: off</div>
         <div class="progress">
           <div class="progress-fill" id="progressFill"></div>
         </div>
       </div>
+
     </section>
 
+    <!-- Filters (hidden in Presentation Mode) -->
     <aside class="card filter-card">
-      <div class="filter-header">
-        <div class="filter-title">Filters</div>
-        <div class="filter-subtitle">Optional — helps match your lesson</div>
-      </div>
-
-      <div class="filter-group">
-        <div class="filter-label">Time</div>
-        <div class="chip-row" id="timeChips">
-          <button class="chip" data-time="1">1 min</button>
-          <button class="chip" data-time="2">2 min</button>
-          <button class="chip" data-time="5">5 min</button>
-          <button class="chip" data-time="10">10 min</button>
-        </div>
-      </div>
-
-      <div class="filter-group">
-        <div class="filter-label">Tags</div>
-        <div class="chip-row" id="tagChips"></div>
-      </div>
+      <div class="filter-title">Filters</div>
+      <div class="filter-subtitle">Optional — narrow the deck</div>
 
       <div class="filter-group">
         <div class="filter-label">Mode</div>
-        <div class="chip-row" id="modeChips">
-          <button class="chip" data-mode="individual">Individual</button>
-          <button class="chip" data-mode="pairs">Pairs</button>
-          <button class="chip" data-mode="whole-class">Whole class</button>
+        <div class="chip-row">
+          <button class="chip">Playful Lines</button>
+          <button class="chip">Observation</button>
+          <button class="chip">Gesture</button>
+          <button class="chip">Imagination</button>
         </div>
       </div>
 
       <div class="filter-footer">
-        <button id="btnClearFilters" class="btn ghost full">Clear filters</button>
-        <div class="small-note" id="countNote">Loading prompts…</div>
+        <div class="small-note">
+          Tip: Press <b>N</b> for new prompt · <b>P</b> for presentation mode
+        </div>
       </div>
     </aside>
+
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
-    Tip: Press <b>F</b> for fullscreen • <b>N</b> for new prompt • <b>B</b> for back
+    Designed for teachers · Built for playful creativity
   </footer>
 
+  <!-- App -->
   <script type="module" src="./app.js"></script>
 </body>
 </html>
