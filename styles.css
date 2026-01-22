@@ -119,6 +119,12 @@ body::before{
   background: var(--ui-panel-soft);
   border:1px solid rgba(255,255,255,.10);
 }
+.prompt-panel {
+  background: rgba(0,0,0,0.35);
+  border-radius: 16px;
+  padding: 1.4rem;
+  border: 1px solid rgba(255,255,255,0.12);
+}
 
 .prompt-title-row{
   display:flex;
@@ -246,5 +252,7 @@ body.presentation .layout{
   line-height: 1.6;
   opacity: 0.95;
 }
+
+
 
 
