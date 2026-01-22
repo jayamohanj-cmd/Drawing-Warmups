@@ -114,8 +114,8 @@ body::before{
 /* Prompt panel */
 .prompt-panel{
   margin-top:6px;
-  padding:18px;
-  border-radius:18px;
+  padding: 28px 30px;          /* was ~18–22; increase this */
+  border-radius: 18px;
   background: var(--ui-panel-soft);
   border:1px solid rgba(255,255,255,.10);
 }
