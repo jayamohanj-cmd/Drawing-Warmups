@@ -1,388 +1,209 @@
 import { startShaderBackground } from "./shader-bg.js";
 
-const PROMPTS_URL = "./data/prompts.json";
-
-const els = {
-  title: document.getElementById("promptTitle"),
-  text: document.getElementById("promptText"),
-  pillTime: document.getElementById("pillTime"),
-  pillDifficulty: document.getElementById("pillDifficulty"),
-  pillId: document.getElementById("pillId"),
-  tagRow: document.getElementById("tagRow"),
-  btnNew: document.getElementById("btnNew"),
-  btnBack: document.getElementById("btnBack"),
-  btnReset: document.getElementById("btnReset"),
-  btnFullscreen: document.getElementById("btnFullscreen"),
-  btnFontUp: document.getElementById("btnFontUp"),
-  btnFontDown: document.getElementById("btnFontDown"),
-  btnStopTimer: document.getElementById("btnStopTimer"),
-  timerButtons: Array.from(document.querySelectorAll(".timer")),
-  timeChips: document.getElementById("timeChips"),
-  tagChips: document.getElementById("tagChips"),
-  modeChips: document.getElementById("modeChips"),
-  btnClearFilters: document.getElementById("btnClearFilters"),
-  countNote: document.getElementById("countNote"),
-  timerStatus: document.getElementById("timerStatus"),
-  progressFill: document.getElementById("progressFill"),
-};
-
+/* ---------- Storage Keys ---------- */
 const LS = {
-  FILTERS: "dw_filters_v1",
-  DECK: "dw_deck_v1",
   HISTORY: "dw_history_v1",
-  FONT: "dw_font_v1",
+  FAVORITES: "dw_favorites_v1",
+  PRESENTATION: "dw_presentation_v1",
+  PROMPT_SCALE: "dw_prompt_scale_v1"
 };
 
+/* ---------- State ---------- */
 let allPrompts = [];
-let filteredPrompts = [];
+let filtered = [];
+let history = [];
+let currentPromptId = null;
 let timerInterval = null;
-let timerEnd = null;
 
-function shuffle(arr) {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
-function loadJSON(key, fallback) {
+/* ---------- Utils ---------- */
+function loadJSON(key, fallback){
   try {
-    const raw = localStorage.getItem(key);
-    return raw ? JSON.parse(raw) : fallback;
+    const v = localStorage.getItem(key);
+    return v ? JSON.parse(v) : fallback;
   } catch {
     return fallback;
   }
 }
 
-function saveJSON(key, value) {
+function saveJSON(key, value){
   localStorage.setItem(key, JSON.stringify(value));
 }
 
-function getFilters() {
-  return loadJSON(LS.FILTERS, { times: [], tags: [], modes: [] });
+function shuffle(arr){
+  return [...arr].sort(() => Math.random() - 0.5);
 }
 
-function setFilters(next) {
-  saveJSON(LS.FILTERS, next);
-  applyFiltersAndRenderCounts();
-  rebuildDeck(); // change deck when filters change
+/* ---------- Favorites ---------- */
+function getFavorites(){
+  return new Set(loadJSON(LS.FAVORITES, []));
 }
 
-function getFontScale() {
-  return Number(localStorage.getItem(LS.FONT) || "1");
+function toggleFavorite(id){
+  const favs = getFavorites();
+  favs.has(id) ? favs.delete(id) : favs.add(id);
+  saveJSON(LS.FAVORITES, [...favs]);
 }
 
-function setFontScale(scale) {
-  const clamped = Math.max(0.85, Math.min(1.25, scale));
-  localStorage.setItem(LS.FONT, String(clamped));
-  document.documentElement.style.setProperty("--promptScale", clamped);
+function isFavorite(id){
+  return getFavorites().has(id);
 }
 
-function buildAvailableTagList(prompts) {
-  const set = new Set();
-  for (const p of prompts) {
-    for (const t of (p.tags || [])) set.add(t);
-  }
-  return Array.from(set).sort((a, b) => a.localeCompare(b));
-}
+/* ---------- Rendering ---------- */
+function renderPrompt(p){
+  if (!p) return;
 
-function matchesFilters(prompt, filters) {
-  const timeOk = filters.times.length === 0 || filters.times.includes(String(prompt.time));
-  const modeOk = filters.modes.length === 0 || filters.modes.includes(prompt.mode);
-  const tags = prompt.tags || [];
-  const tagOk = filters.tags.length === 0 || filters.tags.every(t => tags.includes(t));
-  return timeOk && modeOk && tagOk;
-}
+  currentPromptId = p.id;
 
-function applyFiltersAndRenderCounts() {
-  const filters = getFilters();
-  filteredPrompts = allPrompts.filter(p => matchesFilters(p, filters));
-  els.countNote.textContent = `${filteredPrompts.length} prompts match your filters (out of ${allPrompts.length}).`;
-}
+  document.getElementById("promptTitle").textContent = p.title;
+  document.getElementById("promptText").textContent = p.prompt;
 
-function renderFilterChips() {
-  // tags list depends on all prompts, not filtered prompts
-  const tags = buildAvailableTagList(allPrompts);
+  document.getElementById("pillTime").textContent = `${p.time} min`;
+  document.getElementById("pillDifficulty").textContent = `Level ${p.difficulty}`;
+  document.getElementById("pillId").textContent = p.id;
 
-  els.tagChips.innerHTML = "";
-  for (const tag of tags) {
-    const btn = document.createElement("button");
-    btn.className = "chip";
-    btn.textContent = tag;
-    btn.dataset.tag = tag;
-    els.tagChips.appendChild(btn);
-  }
-
-  syncChipStates();
-}
-
-function syncChipStates() {
-  const filters = getFilters();
-
-  // Time chips
-  Array.from(els.timeChips.querySelectorAll(".chip")).forEach(chip => {
-    chip.classList.toggle("active", filters.times.includes(chip.dataset.time));
+  const tagRow = document.getElementById("tagRow");
+  tagRow.innerHTML = "";
+  (p.tags || []).forEach(t => {
+    const el = document.createElement("div");
+    el.className = "tag";
+    el.textContent = t;
+    tagRow.appendChild(el);
   });
 
-  // Tag chips
-  Array.from(els.tagChips.querySelectorAll(".chip")).forEach(chip => {
-    chip.classList.toggle("active", filters.tags.includes(chip.dataset.tag));
-  });
+  const favBtn = document.getElementById("btnFavorite");
+  const active = isFavorite(p.id);
+  favBtn.classList.toggle("active", active);
+  favBtn.textContent = active ? "★" : "☆";
 
-  // Mode chips
-  Array.from(els.modeChips.querySelectorAll(".chip")).forEach(chip => {
-    chip.classList.toggle("active", filters.modes.includes(chip.dataset.mode));
-  });
+  history.push(p.id);
+  saveJSON(LS.HISTORY, history);
+
+  document.getElementById("btnBack").disabled = history.length < 2;
 }
 
-function rebuildDeck() {
-  // Build a no-repeat deck for the *filtered* set
-  const ids = filteredPrompts.map(p => p.id);
-  const deck = shuffle(ids);
-  saveJSON(LS.DECK, deck);
-  saveJSON(LS.HISTORY, []); // reset history on deck rebuild
-  els.btnBack.disabled = true;
+/* ---------- Prompt Flow ---------- */
+function nextPrompt(){
+  const used = new Set(history);
+  const available = filtered.filter(p => !used.has(p.id));
+
+  const pick = available.length
+    ? available[Math.floor(Math.random() * available.length)]
+    : shuffle(filtered)[0];
+
+  renderPrompt(pick);
 }
 
-function getDeck() {
-  return loadJSON(LS.DECK, null);
-}
-
-function setDeck(deck) {
-  saveJSON(LS.DECK, deck);
-}
-
-function getHistory() {
-  return loadJSON(LS.HISTORY, []);
-}
-
-function setHistory(h) {
-  saveJSON(LS.HISTORY, h);
-  els.btnBack.disabled = h.length < 2; // need at least 2 to go back meaningfully
-}
-
-function findPromptById(id) {
-  return allPrompts.find(p => p.id === id) || null;
-}
-
-function renderPrompt(prompt) {
-  if (!prompt) return;
-
-  els.pillTime.textContent = `${prompt.time} min`;
-  els.pillDifficulty.textContent = `Level ${prompt.difficulty ?? 2}`;
-  els.pillId.textContent = prompt.id;
-
-  els.title.textContent = prompt.title;
-  els.text.textContent = prompt.prompt;
-
-  els.tagRow.innerHTML = "";
-  for (const t of (prompt.tags || [])) {
-    const span = document.createElement("span");
-    span.className = "tag";
-    span.textContent = t;
-    els.tagRow.appendChild(span);
-  }
-}
-
-function nextPrompt() {
-  // If filtered is empty, show message
-  if (filteredPrompts.length === 0) {
-    els.title.textContent = "No prompts match these filters";
-    els.text.textContent = "Clear filters or pick fewer tags/time options.";
-    els.pillTime.textContent = "— min";
-    els.pillDifficulty.textContent = "Level —";
-    els.pillId.textContent = "—";
-    els.tagRow.innerHTML = "";
-    return;
-  }
-
-  let deck = getDeck();
-  if (!Array.isArray(deck) || deck.length === 0) {
-    // Build new deck when empty/missing
-    rebuildDeck();
-    deck = getDeck();
-  }
-
-  // Pop next id from deck
-  const id = deck.shift();
-  setDeck(deck);
-
-  const prompt = findPromptById(id);
-  if (!prompt) {
-    // If prompt id not found (data changed), try again safely
-    nextPrompt();
-    return;
-  }
-
-  // Update history
-  const history = getHistory();
-  history.push(id);
-  setHistory(history);
-
-  renderPrompt(prompt);
-}
-
-function backPrompt() {
-  const history = getHistory();
+function prevPrompt(){
   if (history.length < 2) return;
-
-  // Remove current prompt
   history.pop();
-  const prevId = history[history.length - 1];
-  setHistory(history);
-
-  const prompt = findPromptById(prevId);
-  if (prompt) renderPrompt(prompt);
+  const prevId = history.pop();
+  const p = allPrompts.find(x => x.id === prevId);
+  if (p) renderPrompt(p);
 }
 
-function resetEverything() {
-  // Keep filters + font, but reset deck/history
-  rebuildDeck();
-  els.title.textContent = "Deck reset";
-  els.text.textContent = "Click “New Prompt” to continue.";
-  els.pillTime.textContent = "— min";
-  els.pillDifficulty.textContent = "Level —";
-  els.pillId.textContent = "—";
-  els.tagRow.innerHTML = "";
-  stopTimer();
-}
+/* ---------- Timer ---------- */
+function startTimer(min){
+  clearInterval(timerInterval);
+  const total = min * 60;
+  let remaining = total;
 
-function toggleFullscreen() {
-  if (!document.fullscreenElement) {
-    document.documentElement.requestFullscreen?.();
-  } else {
-    document.exitFullscreen?.();
-  }
-}
+  const fill = document.getElementById("progressFill");
+  const status = document.getElementById("timerStatus");
 
-function stopTimer() {
-  if (timerInterval) clearInterval(timerInterval);
-  timerInterval = null;
-  timerEnd = null;
-  els.timerStatus.textContent = "Timer: off";
-  els.progressFill.style.width = "0%";
-}
-
-function startTimer(minutes) {
-  stopTimer();
-  const ms = minutes * 60 * 1000;
-  const start = Date.now();
-  timerEnd = start + ms;
-
-  els.timerStatus.textContent = `Timer: ${minutes} min running`;
-  els.progressFill.style.width = "0%";
+  fill.style.width = "0%";
+  status.textContent = `Timer: ${min} min`;
 
   timerInterval = setInterval(() => {
-    const now = Date.now();
-    const elapsed = now - start;
-    const pct = Math.min(100, (elapsed / ms) * 100);
-    els.progressFill.style.width = `${pct}%`;
+    remaining--;
+    fill.style.width = `${100 * (1 - remaining / total)}%`;
 
-    if (now >= timerEnd) {
-      stopTimer();
-      els.timerStatus.textContent = "Timer: done ✓";
-      // quick flash
-      document.body.animate(
-        [{ opacity: 1 }, { opacity: 0.85 }, { opacity: 1 }],
-        { duration: 450, iterations: 2 }
-      );
+    if (remaining <= 0){
+      clearInterval(timerInterval);
+      status.textContent = "Time’s up";
     }
-  }, 200);
+  }, 1000);
 }
 
-function wireChips() {
-  els.timeChips.addEventListener("click", (e) => {
-    const btn = e.target.closest(".chip");
-    if (!btn) return;
-    const f = getFilters();
-    const t = btn.dataset.time;
-    f.times = f.times.includes(t) ? f.times.filter(x => x !== t) : [...f.times, t];
-    setFilters(f);
-    syncChipStates();
+function stopTimer(){
+  clearInterval(timerInterval);
+  document.getElementById("progressFill").style.width = "0%";
+  document.getElementById("timerStatus").textContent = "Timer: off";
+}
+
+/* ---------- Presentation Mode ---------- */
+function togglePresentation(){
+  const on = document.body.classList.toggle("presentation");
+  localStorage.setItem(LS.PRESENTATION, on ? "1" : "0");
+}
+
+/* ---------- UI Wiring ---------- */
+function wireUI(){
+  document.getElementById("btnNew").onclick = nextPrompt;
+  document.getElementById("btnBack").onclick = prevPrompt;
+  document.getElementById("btnReset").onclick = () => {
+    history = [];
+    saveJSON(LS.HISTORY, []);
+    nextPrompt();
+  };
+
+  document.getElementById("btnFavorite").onclick = () => {
+    if (!currentPromptId) return;
+    toggleFavorite(currentPromptId);
+    renderPrompt(allPrompts.find(p => p.id === currentPromptId));
+  };
+
+  document.getElementById("btnPresent").onclick = togglePresentation;
+  document.getElementById("btnFullscreen").onclick = () => {
+    document.fullscreenElement
+      ? document.exitFullscreen()
+      : document.documentElement.requestFullscreen();
+  };
+
+  document.querySelectorAll(".timer").forEach(btn => {
+    btn.onclick = () => startTimer(Number(btn.dataset.min));
   });
 
-  els.tagChips.addEventListener("click", (e) => {
-    const btn = e.target.closest(".chip");
-    if (!btn) return;
-    const f = getFilters();
-    const tag = btn.dataset.tag;
-    f.tags = f.tags.includes(tag) ? f.tags.filter(x => x !== tag) : [...f.tags, tag];
-    setFilters(f);
-    syncChipStates();
-  });
+  document.getElementById("btnStopTimer").onclick = stopTimer;
 
-  els.modeChips.addEventListener("click", (e) => {
-    const btn = e.target.closest(".chip");
-    if (!btn) return;
-    const f = getFilters();
-    const mode = btn.dataset.mode;
-    f.modes = f.modes.includes(mode) ? f.modes.filter(x => x !== mode) : [...f.modes, mode];
-    setFilters(f);
-    syncChipStates();
-  });
+  document.getElementById("btnFontUp").onclick = () => {
+    const v = Math.min(1.6, (Number(localStorage.getItem(LS.PROMPT_SCALE)) || 1) + 0.1);
+    document.documentElement.style.setProperty("--promptScale", v);
+    localStorage.setItem(LS.PROMPT_SCALE, v);
+  };
 
-  els.btnClearFilters.addEventListener("click", () => {
-    setFilters({ times: [], tags: [], modes: [] });
-    syncChipStates();
+  document.getElementById("btnFontDown").onclick = () => {
+    const v = Math.max(0.8, (Number(localStorage.getItem(LS.PROMPT_SCALE)) || 1) - 0.1);
+    document.documentElement.style.setProperty("--promptScale", v);
+    localStorage.setItem(LS.PROMPT_SCALE, v);
+  };
+
+  window.addEventListener("keydown", e => {
+    if (e.key === "n") nextPrompt();
+    if (e.key === "b") prevPrompt();
+    if (e.key === "p") togglePresentation();
+    if (e.key === "f") document.documentElement.requestFullscreen();
   });
 }
 
-function wireButtons() {
-  els.btnNew.addEventListener("click", nextPrompt);
-  els.btnBack.addEventListener("click", backPrompt);
-  els.btnReset.addEventListener("click", resetEverything);
-  els.btnFullscreen.addEventListener("click", toggleFullscreen);
+/* ---------- Init ---------- */
+async function init(){
+  startShaderBackground(document.getElementById("bgShader"));
 
-  els.btnFontUp.addEventListener("click", () => setFontScale(getFontScale() + 0.05));
-  els.btnFontDown.addEventListener("click", () => setFontScale(getFontScale() - 0.05));
-
-  els.timerButtons.forEach(b => {
-    b.addEventListener("click", () => startTimer(Number(b.dataset.min)));
-  });
-  els.btnStopTimer.addEventListener("click", stopTimer);
-
-  window.addEventListener("keydown", (e) => {
-    if (e.target && ["INPUT", "TEXTAREA"].includes(e.target.tagName)) return;
-    const k = e.key.toLowerCase();
-    if (k === "n") nextPrompt();
-    if (k === "b") backPrompt();
-    if (k === "f") toggleFullscreen();
-    if (k === "escape") stopTimer();
-  });
-}
-
-async function init() {
-  setFontScale(getFontScale());
-  const canvas = document.getElementById("bgShader");
-  startShaderBackground(canvas);
-
-  const res = await fetch(PROMPTS_URL, { cache: "no-store" });
+  const res = await fetch("./data/prompts.json");
   allPrompts = await res.json();
+  filtered = [...allPrompts];
 
-  renderFilterChips();
-  applyFiltersAndRenderCounts();
+  history = loadJSON(LS.HISTORY, []);
 
-  // If deck doesn't exist or doesn't match current filtered set, rebuild
-  const deck = getDeck();
-  const deckOk = Array.isArray(deck) && deck.length > 0;
-  if (!deckOk) rebuildDeck();
+  const scale = Number(localStorage.getItem(LS.PROMPT_SCALE)) || 1;
+  document.documentElement.style.setProperty("--promptScale", scale);
 
-  // Sync UI chips to stored filters
-  syncChipStates();
+  if (localStorage.getItem(LS.PRESENTATION) === "1") {
+    document.body.classList.add("presentation");
+  }
 
-  // Enable back if history exists
-  setHistory(getHistory());
-
-  wireChips();
-  wireButtons();
-
-  els.countNote.textContent = `${filteredPrompts.length} prompts match your filters (out of ${allPrompts.length}).`;
+  wireUI();
+  nextPrompt();
 }
 
-init().catch(err => {
-  console.error(err);
-  els.title.textContent = "Error loading prompts";
-  els.text.textContent = "Check that data/prompts.json exists and GitHub Pages is serving it.";
-});
+init();
